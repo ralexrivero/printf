@@ -1,3 +1,4 @@
+
 # printf - custom function
 ### version 0.1
 ## Content
@@ -27,16 +28,6 @@ Style guidelines: [Betty style](https://github.com/holbertonschool/Betty/wiki)
 |%llf|`printf("value is: %llf")`            |3,48e-308
 |%s|`printf("Name: %s")`|Mariano|
 
-
-
-```mermaid
-graph LR
-A[printf] -- placeholder --> B((Number))
-A --> C(literal string)
-B --> D{Integer?}
-C --> D
-D --> E[standard output]
-```
 ## Precision
 ### with
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
@@ -46,8 +37,9 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
 ---
 
 ## Repository files
+
 | file | description |type |
-|--|--|--|--|
+|--|--|--|
 | _putchar.c | putchar |prototype
 | holberton.h | include |header
 
