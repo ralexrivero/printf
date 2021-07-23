@@ -4,7 +4,7 @@
 /* Libraries */
 #include <stdio.h>
 #include <stdlib.h>
-
+#include <stdarg.h>
 /* Prototype Putchar*/
 int _putchar(char c);
 
@@ -12,3 +12,4 @@ int _putchar(char c);
 int _printf(const char *format, ...);
 
 #endif
+
