@@ -9,12 +9,23 @@
 int _putchar(char c);
 
 /* Protptypes */
+
 int _printf(const char *format, ...);
 
-/* Basic prototypes for print_all */
-void per(va_list p)
-void pac(va_list p);
-void pai(va_list p);
-void paf(va_list p);
+/**
+ * struct regular
+ * @pm: parameter entered
+ * @format: the format to apply
+ */
+
+typedef struct regular
+{
+	char *pm;
+	void (*format)(va_list p);
+} list_t;
+
+/* Basic prototypes for _printf */
+
+void per(va_list p);
 #endif
 
