@@ -12,6 +12,7 @@ int _putchar(char c);
 int _printf(const char *format, ...);
 
 /* Basic prototypes for print_all */
+void per(va_list p)
 void pac(va_list p);
 void pai(va_list p);
 void paf(va_list p);
