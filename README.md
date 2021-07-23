@@ -1,10 +1,19 @@
 # printf - custom function
-### version 0.1
+### version 0.1 beta
 ## Content
-A custom version of printf function, originally included in the library ``stdio.h``
 
 ## Introduction to the project
 printf() function is **used to print the (“character, string, float, integer, octal and hexadecimal values”)** onto the standard output.
+
+Print formatted text
+Return number of characters printed
+the _printf function identify the placeholder and return the value passed
+
+## Marcadores de formato
+
+list
+
+
 
 ## Evironment
 <div >
@@ -24,28 +33,16 @@ printf() function is **used to print the (“character, string, float, integer, 
 ## Specifitacation
 
 - No allowed to use global variable
+- No more than 5 functions per file
+- All files end with a new line
 - 
-## Cases
-|          Placeholder     |Code|Output|
-|----------------|-------------------------------|-----------------------------|
-|%%|`printf("%%")`            |%            |
-|%llf|`printf("value is: %llf")`            |3,48e-308
-|%s|`printf("Name: %s")`|Mariano|
-
-## Precision
-### with
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-###  height
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
----
 
 ## Repository files
 
 | file | description |type |
 |--|--|--|
-| _putchar.c | putchar |prototype
-| holberton.h | include |header
+| _putchar.c | emulates the putchar function |prototype
+| holberton.h | includes prototypes and structres |header
 
 ## Compilation
 
@@ -54,7 +51,7 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
 # Wiki
 
 ## Authors
-``Diego Guarise`` & ``Ronald Rivero``
+``Diego Guarise`` & ``Ronald Rivero`` & ``Joaquin Pintaluba``
 
 
 About authors
@@ -73,5 +70,15 @@ Ronald
 <a href ="https://discord.gg/4QNsYMAa4t" target="_blank" rel="noreferrer noopener"> <img align="left" src="https://raw.githubusercontent.com/ralexrivero/xelar_theme_profile/main/icons/discord-brands_blue.svg" alt="Ronald Rivero | Discord" width="22px"> </a>
 <a href="https://twitter.com/ralex_uy" target="_blank"> <img align="left" alt="Ronald Rivero | Twitter" width="22px" src="https://raw.githubusercontent.com/ralexrivero/xelar_theme_profile/main/icons/twitter-square-brands_blue.svg" /> </a>
 <a href="https://www.linkedin.com/in/ronald-rivero/" target="_blank"> <img align="left" alt="Ronald Rivero | LinkedIn" width="22px" src="https://raw.githubusercontent.com/ralexrivero/xelar_theme_profile/main/icons/linkedin-brands_blue.svg" /> </a>
+<a href="mailto:ralexrivero@gmail.com?subject=Contact" target="_blank"><img align="left" width="22" src="https://raw.githubusercontent.com/ralexrivero/xelar_theme_profile/main/icons/envelope-regular_blue.svg" alt="email me"> </a>
+<br>
+
+Joaquin
+
+<br>
+<a href="https://github.com/jopinta" target="_blank"> <img align="left" alt="Joaquin Pintaluba | Github" width="22px" src="https://raw.githubusercontent.com/ralexrivero/xelar_theme_profile/main/icons/github-icon.svg" /> </a>
+
+<a href="https://twitter.com/tatinfa" target="_blank"> <img align="left" alt="Joaquin Pintaluba | Twitter" width="22px" src="https://raw.githubusercontent.com/ralexrivero/xelar_theme_profile/main/icons/twitter-square-brands_blue.svg" /> </a>
+<a href="https://www.linkedin.com/in/joaquin-pintaluba/" target="_blank"> <img align="left" alt="Joaquin Pintaluba | LinkedIn" width="22px" src="https://raw.githubusercontent.com/ralexrivero/xelar_theme_profile/main/icons/linkedin-brands_blue.svg" /> </a>
 <a href="mailto:ralexrivero@gmail.com?subject=Contact" target="_blank"><img align="left" width="22" src="https://raw.githubusercontent.com/ralexrivero/xelar_theme_profile/main/icons/envelope-regular_blue.svg" alt="email me"> </a>
 <br>
