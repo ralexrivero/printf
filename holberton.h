@@ -18,11 +18,11 @@ int _printf(const char *format, ...);
  * @format: the format to apply
  */
 
-typedef struct regular
+typedef struct
 {
 	char *pm;
 	void (*format)(va_list p);
-} list_t;
+} specifier;
 
 /* Basic prototypes for _printf */
 
