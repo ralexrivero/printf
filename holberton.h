@@ -13,7 +13,7 @@ int _putchar(char c);
 int _printf(const char *format, ...);
 
 /**
- * struct regular
+ * struct - the format after %
  * @pm: parameter entered
  * @format: the format to apply
  */
@@ -22,7 +22,7 @@ typedef struct
 {
 	char *pm;
 	void (*format)(va_list p);
-} specifier;
+} formating;
 
 /* Basic prototypes for _printf */
 
