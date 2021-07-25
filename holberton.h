@@ -25,7 +25,9 @@ typedef struct
 } formating;
 
 /* Basic prototypes for _printf */
-
+int p_int(numero);
+int p_str(*c);
 void per(va_list p);
+
 #endif
 
