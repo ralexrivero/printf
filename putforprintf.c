@@ -1,25 +1,39 @@
-#include <stdio.h>
+#include "holberton.h"
 
 /**
- *main - blabla
- *Description: print %
- *Return: 0 if the programming ran to completion
+ * Description: print int
+ * Return: the value for switch in _printf
  */
 
-int per(/*???????*/)
+int p_int(int numero)
 {
-	_putchar(37);
-	return (0);
+	int x = numero, i = 0;
+
+	if (numero)
+		{
+			if (numero < 0)
+			{
+				_putchar('-');
+				x = -x;
+			}
+			if ()
+				//nose como seguir
+		}
+	return ();
 }
 
-int printS(/*?????????*/)
+/**
+ * Descripcion - print a string of char
+ * @c: pointer to string
+ */
+int p_str(char *c)
 {
-	for (int c = 0; string[c] != '\0'; c++)
+	if (c)
 	{
-		putchar(string[c]);
+		for (int i = 0; c[i] != '\0'; i++)
+		{
+			_putchar(c[i]);
+		}
 	}
-}
-
-int pai(/*????????*/)
-	{
+	return (i);
 }
