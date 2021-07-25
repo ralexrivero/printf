@@ -7,7 +7,6 @@ int _printf(const char *format, ...)
 {
 	unsigned int i;
 	va_list list;
-	cout = 0;
 
 	if (format)
 	{
@@ -18,25 +17,25 @@ int _printf(const char *format, ...)
 			{
 				_putchar(format[i]);
 			}
-			if (format[i] == '%')
+/*			if (format[i] == '%')
 			{
 				switch (format[i + 1])
 				{
 					case 's':
-						cout << p_str(va_arg(list,char *));
+						_putchar(p_str(va_arg(list,char *)));
 						break;
-					//case 'd':
-					//	cout << p_int(va_arg(list,int));
-					//	break;
+					case 'd':
+						_putchar(p_int(va_arg(list,int)));
+						break;
 					case '%':
-						cout << _putchar(37);
+						_putchar(37);
 						break;
 					case '\n':
-						cout << _putchar('\n');
+						_putchar('\n');
 						break;
 				}
 			}
-		}
+*/		}
 		va_end(list);
 	}
 	return (0);
