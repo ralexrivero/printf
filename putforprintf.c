@@ -5,22 +5,22 @@
  * Return: the value for switch in _printf
  */
 
-int p_int(int numero)
-{
-	int x = numero, i = 0;
-
-	if (numero)
-		{
-			if (numero < 0)
-			{
-				_putchar('-');
-				x = -x;
-			}
-			if ()
+//int p_int(int numero)
+//{
+//	int x = numero, i = 0;
+//
+//	if (numero)
+//		{
+//			if (numero < 0)
+//			{
+//				_putchar('-');
+//				x = -x;
+//			}
+//			if ()
 				//nose como seguir
-		}
-	return ();
-}
+//		}
+//	return ();
+//}
 
 /**
  * Descripcion - print a string of char
@@ -28,9 +28,11 @@ int p_int(int numero)
  */
 int p_str(char *c)
 {
+	int i;
+
 	if (c)
 	{
-		for (int i = 0; c[i] != '\0'; i++)
+		for (i = 0; c[i] != '\0'; i++)
 		{
 			_putchar(c[i]);
 		}

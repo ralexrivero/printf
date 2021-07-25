@@ -1,3 +1,5 @@
+#include "holberton.h"
+
 /* hola soy colo empece con esto porque me tranque con los putchat,
  * hice solo que imprimiera una cadena y lo que ya habia hecho. */
 
@@ -5,11 +7,12 @@ int _printf(const char *format, ...)
 {
 	unsigned int i;
 	va_list list;
+	cout = 0;
 
 	if (format)
 	{
 		va_start(list, format);
-		for (i = 0; format[i] != NULL; i++)
+		for (i = 0; format[i] != '\0'; i++)
 		{
 			if (format[i] != '%')
 			{
@@ -22,9 +25,9 @@ int _printf(const char *format, ...)
 					case 's':
 						cout = p_str(va_arg(list,char *));
 						break;
-					case 'd':
-						cout = p_int(va_arg(list,int));
-						break;
+					//case 'd':
+					//	cout = p_int(va_arg(list,int));
+					//	break;
 					case '%':
 						cout = _putchar(37);
 						break;
