@@ -23,16 +23,16 @@ int _printf(const char *format, ...)
 				switch (format[i + 1])
 				{
 					case 's':
-						cout = p_str(va_arg(list,char *));
+						cout << p_str(va_arg(list,char *));
 						break;
 					//case 'd':
-					//	cout = p_int(va_arg(list,int));
+					//	cout << p_int(va_arg(list,int));
 					//	break;
 					case '%':
-						cout = _putchar(37);
+						cout << _putchar(37);
 						break;
 					case '\n':
-						cout = _putchar('\n');
+						cout << _putchar('\n');
 						break;
 				}
 			}
