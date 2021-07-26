@@ -10,7 +10,7 @@
 int _printf(const char *format, ...)
 {
 	unsigned int i = 0;
-    int len = 0;
+	int len = 0;
 	va_list list;
 
 	if (format)
@@ -21,7 +21,7 @@ int _printf(const char *format, ...)
 			if (format[i] != '%')
 			{
 				_putchar(format[i]);
-                len++;
+				len++;
 			}
 			if (format[i] == '%')
 			{
@@ -29,15 +29,14 @@ int _printf(const char *format, ...)
 				{
 					case 'c':
 						_putchar(va_arg(list, int));
+						i++;
 						break;
 					case 's':
 						p_s(va_arg(list, char *));
+						i++;
 						break;
 					case '%':
 						_putchar(37);
-						break;
-					case '\n':
-						_putchar('\n');
 						break;
 				}
 			}

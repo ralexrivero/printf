@@ -1,9 +1,7 @@
 #include "holberton.h"
 
 /**
- * p_int - print strin
- * 
- * 
+ * p_int - print strin 
  */
 
 int p_s(char *c)
