@@ -20,4 +20,3 @@ int p_s(char *c)
 
 	return (i);
 }
-
