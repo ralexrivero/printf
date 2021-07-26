@@ -46,6 +46,6 @@ int _printf(const char *format, ...)
 		}
 		va_end(list);
 	}
-	printf("%i\n", len);
+	//printf("%i\n", len);
 	return (len);
 }
