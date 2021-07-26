@@ -30,7 +30,6 @@ int _printf(const char *format, ...)
 					flag = 1;
 			}
 			else
-			{
 				switch (format[i])
 				{
 					case 'c':
@@ -46,7 +45,6 @@ int _printf(const char *format, ...)
 						len += _putchar('%');
 				}
 				flag = 0;
-			}
 		}
 		va_end(list);
 	}
