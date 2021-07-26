@@ -1,23 +1,42 @@
 #include "holberton.h"
 
-/**
- *
- * Return:  the number of characters printed 
- * (excluding the null byte used to end output to strings)
- */
+/* hola soy colo empece con esto porque me tranque con los putchat,
+ * hice solo que imprimiera una cadena y lo que ya habia hecho. */
 
-/* prototype defined has variadic with ... */
-/* use special macros to access the variable argument */
 int _printf(const char *format, ...)
 {
-/**
- * initialize argument pointer varible va_list with va_star
- * argument pointer points to the first optional argument
- */
+	unsigned int i;
+	va_list list;
 
-/* call va_arg to acces first argument, next the second... */
-/* when done with argument pointer, finish with va_end */
-
-va_list 
-
+	if (format)
+	{
+		va_start(list, format);
+		for (i = 0; format[i] != '\0'; i++)
+		{
+			if (format[i] != '%')
+			{
+				_putchar(format[i]);
+			}
+/*			if (format[i] == '%')
+			{
+				switch (format[i + 1])
+				{
+					case 's':
+						_putchar(p_str(va_arg(list,char *)));
+						break;
+					case 'd':
+						_putchar(p_int(va_arg(list,int)));
+						break;
+					case '%':
+						_putchar(37);
+						break;
+					case '\n':
+						_putchar('\n');
+						break;
+				}
+			}
+*/		}
+		va_end(list);
+	}
+	return (0);
 }
