@@ -17,6 +17,10 @@ int p_s(char *c)
 			i++;
 		_putchar(c[i]);
 	}
+	{
+		if (!c)
+			return (-1);
+	}
 
 	return (i);
 }
