@@ -30,18 +30,22 @@ int _printf(const char *format, ...)
 					case 'c':
 						_putchar(va_arg(list, int));
 						i++;
+						len++;
 						break;
 					case 's':
 						p_s(va_arg(list, char *));
 						i++;
+						len++;
 						break;
 					case '%':
 						_putchar(37);
+						len++;
 						break;
 				}
 			}
 		}
-		 va_end(list);
+		va_end(list);
 	}
+	printf("%i\n", len);
 	return (len);
 }

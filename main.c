@@ -16,5 +16,7 @@ int main(void)
 	_putchar('\n');
 	_printf("Salto de linea \n");
 	_putchar('\n');
+	_printf("%%");
+	_printf("hola %c", 58);
 	return (0);
 }
