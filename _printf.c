@@ -13,26 +13,21 @@ int _printf(const char *format, ...)
 	int len = 0;
 	va_list list;
 	int flag = 0;
-	
+
 	if (format == NULL || (format[0] == '%' && format[1] == '\0'))
 	{
 		return (-1);
 	}
 	if (format)
-	{
-		va_start(list, format);
+	{va_start(list, format);
 		for (i = 0; format[i] != '\0'; i++)
 		{
 			if (!flag)
 			{
 				if (format[i] != '%')
-				{
 					len += putchar(format[i]);
-				}
 				else
-				{
 					flag = 1;
-				}
 			}
 			else
 			{
@@ -53,6 +48,5 @@ int _printf(const char *format, ...)
 		}
 		va_end(list);
 	}
-	//printf("%i\n", len);
 	return (len);
 }
