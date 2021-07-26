@@ -11,4 +11,7 @@
 
 int _putchar(char c);
 
+/*task 0 */
+int p_s(char *c);
+
 #endif
