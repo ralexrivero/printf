@@ -18,5 +18,7 @@ int main(void)
 	_putchar('\n');
 	_printf("%%");
 	_printf("hola %c", 58);
+	_printf(NULL);
+	_printf("%s", NULL);
 	return (0);
 }
