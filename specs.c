@@ -1,19 +1,22 @@
 #include "holberton.h"
 
 /**
- * p_int - print strin
+ * p_s - print strin
+ *@c: string to check
+ *
+ *Return: always 0
  */
 
 int p_s(char *c)
 {
-    int i = 0;
-    if (c)
+int i = 0;
+if (c)
+{
+	while (c[i] != '\0')
 	{
-		while (c[i] != '\0')
-		{
-			_putchar(c[i]);
-		}
-        i++;
+		_putchar(c[i]);
 	}
+i++;
+
 	return (i);
 }
