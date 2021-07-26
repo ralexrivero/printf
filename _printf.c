@@ -34,13 +34,13 @@ int _printf(const char *format, ...)
 				switch (format[i])
 				{
 					case 'c':
-						_putchar(va_arg(list, int));
+						len += _putchar(va_arg(list, int));
 						break;
 					case 's':
-						p_s(va_arg(list, char *));
+						len += p_s(va_arg(list, char *));
 						break;
 					case '%':
-						_putchar(37);
+						len += _putchar(37);
 						break;
 				}
 				flag = 0;
