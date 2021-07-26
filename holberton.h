@@ -9,6 +9,7 @@
 #include <limits.h>
 #include <float.h>
 
+int _printf(const char *format, ...);
 int _putchar(char c);
 
 /*task 0 */
