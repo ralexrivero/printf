@@ -9,39 +9,42 @@
 
 int _printf(const char *format, ...)
 {
-	unsigned int i = 0;
+	int i = 0;
 	int len = 0;
 	va_list list;
+	int flag = 0;
 
 	if (format)
 	{
 		va_start(list, format);
 		for (i = 0; format[i] != '\0'; i++)
 		{
-			if (format[i] != '%')
+			if (!flag)
 			{
-				_putchar(format[i]);
-				len++;
+				if (format[i] != '%')
+				{
+					len += putchar(format[i]);
+				}
+				else
+				{
+					flag = 1;
+				}
 			}
-			if (format[i] == '%')
+			else
 			{
-				switch (format[i + 1])
+				switch (format[i])
 				{
 					case 'c':
 						_putchar(va_arg(list, int));
-						i++;
-						len++;
 						break;
 					case 's':
 						p_s(va_arg(list, char *));
-						i++;
-						len++;
 						break;
 					case '%':
 						_putchar(37);
-						len++;
 						break;
 				}
+				flag = 0;
 			}
 		}
 		va_end(list);
