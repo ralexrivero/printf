@@ -2,9 +2,8 @@
 
 /**
  * p_s - print strin
- *@c: string to check
- *
- *Return: always 0
+ * @c: string to check
+ * Return: i
  */
 
 int p_s(char *c)

@@ -19,16 +19,6 @@ int p_c(va_list p)
  */
 int p_s(va_list p)
 {
-	// int i = 0;
-	// char *s;
-
-	// s = va_arg(p, char*);
-	// while(s[i] != '\0');
-	// {
-	// 	write(s[i]);
-	// 	i++;
-	// }
-	// return(1);
 
 	char *ch = va_arg(p, int);
 	int i;
@@ -52,20 +42,23 @@ int p_p(va_list __attribute__((unused)) p)
  * @p: argument pointer
  * Return: 1
  */
-int p_d(va_list p)
+
+/* int p_d(va_list p)
 {
 	int ch = (char)va_arg(p, int);
 
 	_putchar(ch);
 }
+*/
 /**
  * p_i - print integer
  * @p: argument pointer
  * Return: 1
  */
-int p_i(va_list p)
+/*int p_i(va_list p)
 {
 	int ch = (char)va_arg(p, int);
 
 	_putchar(ch);
 }
+*/
