@@ -20,6 +20,22 @@ ui = (unsigned int)INT_MAX + 1024;
 addr = (void *)0x7ffe637541f0;
 len = _printf("Percent:[%%]\n");
 len2 = printf("Percent:[%%]\n");
+_printf("Character:[%c]\n", 'H');
+printf("Character:[%c]\n", 'H');
+_printf("String:[%s]\n", "I am a string !");
+printf("String:[%s]\n", "I am a string !");
+_printf(NULL);
+printf(NULL);
+_printf("% ");
+printf("% ");
+_printf("");
+printf("");
+_printf("%c\n", "gol");
+printf("%c\n", "gol");
+_printf("\n");
+printf("\n");
+_printf("finish %s\n", "now");
+printf("finish %s\n", "now");
 return (0);
 }
 

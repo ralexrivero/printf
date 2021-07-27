@@ -9,6 +9,8 @@ int p_c(va_list p)
 	int ch = (char)va_arg(p, int);
 
 	_putchar(ch);
+
+	return(1);
 }
 /**
  * p_s - print string
@@ -17,11 +19,22 @@ int p_c(va_list p)
  */
 int p_s(va_list p)
 {
-	int ch = (char)va_arg(p, int);
+	int i = 0;
+	char *s;
 
-	_putchar(ch);
+	s = va_arg(p, char*);
+	if(!s)
+	{
+		s = "(null)";
+	}
+	while(s[i]);
+	{
+		_putchar(s[i]);
+		i++;
+	}
+	
+	return(i);
 }
-
 /**
  * p_p - print percent
  * @p: argument pointer
