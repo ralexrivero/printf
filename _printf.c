@@ -1,4 +1,5 @@
 #include "holberton.h"
+#define BUFFER_SIZE 1024
 /**
  * _printf - emulate the original printf
  * @format: string to print and format by specifier
