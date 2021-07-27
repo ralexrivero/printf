@@ -57,7 +57,11 @@ int p_p(va_list __attribute__((unused)) p)
  */
 
 /**
+<<<<<<< HEAD
  * int p_d(va_list p)
+=======
+ *  int p_d(va_list p)
+>>>>>>> 1e00b4036f79904d84e1f1375ecd0c2104aff323
  * {
  *	int ch = (char)va_arg(p, int);
  *
