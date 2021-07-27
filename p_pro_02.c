@@ -12,6 +12,17 @@ int p_St(va_list p)
 	_putchar(ch);
 }
 /**
+ * p_pt - print xxx
+ * @p: argument pointer
+ * Return: 1
+ */
+int p_pt(va_list p)
+{
+	int ch = (char)va_arg(p, int);
+
+	_putchar(ch);
+}
+/**
  * p_r - print xxx
  * @p: argument pointer
  * Return: 1
