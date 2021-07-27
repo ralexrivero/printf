@@ -1,13 +1,13 @@
 #include "holberton.h"
-
-int specifier(int *i, const char *format, va_list list)
-{
-	int len2 = 0, k = *i, l = 0, m = 0;
 /**
  * specifier - looks for the specifier and call prototypes
  * @len2: length of the string
  * @l: iterator for list_t in every c,s,%,d...
  */
+int specifier(int *i, const char *format, va_list list)
+{
+	int len2 = 0, k = *i, l = 0, m = 0;
+
 	list_t spec[] = {
 		{"c", p_c},
 		{"s", p_s},
@@ -24,10 +24,9 @@ int specifier(int *i, const char *format, va_list list)
 		{"R", p_Rt},
 		{NULL, NULL},
 	};
-	
 	for (; l < 13; l++)
 	{
-		if(*(spec[l].opointer) == format[k + 1])
+		if (*(spec[l].opointer) == format[k + 1])
 		{
 			len2 += spec[l].fpointer(list);
 			*i += 1;
@@ -35,13 +34,9 @@ int specifier(int *i, const char *format, va_list list)
 		else
 		{
 			m++;
-		}
-		l++;
+		}l++;
 	}
-
 	if (m == 13)
-	{
 		len2 += _putchar(format[k]);
-	}
 	return (len2);
 }
