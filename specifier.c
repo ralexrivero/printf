@@ -2,7 +2,7 @@
 
 int specifier(int *i, const char *format, va_list list)
 {
-	unsigned int len2 = 0, k = *i, l = 0, m = 0;
+	int len2 = 0, k = *i, l = 0, m = 0;
 /**
  * specifier - looks for the specifier and call prototypes
  * @len2: length of the string
