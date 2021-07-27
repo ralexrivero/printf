@@ -7,16 +7,15 @@
  */
 int _printf(const char *format, ...)
 {
-	int i = 0;
-	int len = 0;
+	int i = 0, len = 0, flag = 0;
 	va_list list;
-	int flag = 0;
-
-	if (!format || format[i] == '\n' || format[i] == '\0' ||
+	
+	if (format == NULL || format[i] == '\n' || format[i] == '\0' ||
 	(format[i] == '%' && !format[i + 1]))
 	{
 	return (-1);
 	}
+	if (format && format[i])
 	{va_start(list, format);
 		for (i = 0; format[i] != '\0'; i++)
 		{
