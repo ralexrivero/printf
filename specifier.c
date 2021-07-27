@@ -20,7 +20,7 @@ int specifier(int *i, const char *format, va_list list)
 		{"r", p_r}, {"R", p_Rt},
 		{NULL, NULL},
 	};
-	for (; l < 13; l++)
+	for (; l < 14; l++)
 	{
 		if (*(spec[l].opointer) == format[k + 1])
 		{
@@ -32,7 +32,7 @@ int specifier(int *i, const char *format, va_list list)
 			m++;
 		}
 	}
-	if (m == 13)
+	if (m == 14)
 		len2 += _putchar(format[k]);
 	return (len2);
 }
