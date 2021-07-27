@@ -3,6 +3,10 @@
  * specifier - looks for the specifier and call prototypes
  * @len2: length of the string
  * @l: iterator for list_t in every c,s,%,d...
+ * @i: member i
+ * @format: string from _printf
+ * @list: the list of arguments
+ * Return: length of output
  */
 int specifier(int *i, const char *format, va_list list)
 {
@@ -28,7 +32,8 @@ int specifier(int *i, const char *format, va_list list)
 		else
 		{
 			m++;
-		}l++;
+		}
+		l++;
 	}
 	if (m == 13)
 		len2 += _putchar(format[k]);
