@@ -41,7 +41,7 @@ int _printf(const char *format, ...)
 						len += _putchar(37);
 						break;
 					default:
-						len += _putchar('%');
+						len += _putchar(format[i]);
 				}
 				flag = 0;
 			}
