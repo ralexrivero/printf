@@ -2,14 +2,13 @@
 /**
  * _printf - emulate the original printf
  * @format: string to print and format by specifier
- * Description: create our own variadic prototype
  * Return: lenght of the output
  */
 int _printf(const char *format, ...)
 {
 	int i = 0, len = 0, flag = 0;
 	va_list list;
-	
+
 	if (format == NULL || format[i] == '\n' || format[i] == '\0' ||
 	(format[i] == '%' && !format[i + 1]))
 	{
