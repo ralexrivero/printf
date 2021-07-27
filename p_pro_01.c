@@ -2,6 +2,7 @@
 /**
  * p_d - jrint decimal and integer
  * @j: argument pointer
+ * @arg: first member
  * Return: 1
  */
 
@@ -10,6 +11,7 @@ int p_d(va_list arg)
 	unsigned int i, j, k;
 
 	int n = va_arg(arg, int), len2 = 0;
+
 	if (n < 0)
 	{
 		len2 += _putchar('-');
