@@ -1,22 +1,26 @@
 #include "holberton.h"
+
 /**
  * p_c - print character
  * @p: argument pointer
  * Return: 1
  */
+
 int p_c(va_list p)
 {
 	int ch = (char)va_arg(p, int);
 
 	_putchar(ch);
 
-	return(1);
+	return (1);
 }
+
 /**
  * p_s - print string
  * @p: argument pointer
  * Return: 1
  */
+
 int p_s(va_list p)
 {
 	int i = 0;
@@ -52,22 +56,26 @@ int p_p(va_list __attribute__((unused)) p)
  * Return: 1
  */
 
-/* int p_d(va_list p)
-{
-	int ch = (char)va_arg(p, int);
+/**
+ * int p_d(va_list p)
+ * {
+ *	int ch = (char)va_arg(p, int);
+ *
+ *	_putchar(ch);
+ * }
+ */
 
-	_putchar(ch);
-}
-*/
 /**
  * p_i - print integer
  * @p: argument pointer
  * Return: 1
  */
-/*int p_i(va_list p)
-{
-	int ch = (char)va_arg(p, int);
 
-	_putchar(ch);
-}
-*/
+/**
+ * int p_i(va_list p)
+ * {
+ *	int ch = (char)va_arg(p, int);
+ *
+ *	_putchar(ch);
+ * }
+ */
