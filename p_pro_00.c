@@ -23,16 +23,11 @@ int p_s(va_list p)
 	char *s;
 
 	s = va_arg(p, char*);
-	if(!s)
-	{
-		s = "(null)";
-	}
 	while(s[i]);
 	{
 		_putchar(s[i]);
 		i++;
 	}
-	
 	return(i);
 }
 /**

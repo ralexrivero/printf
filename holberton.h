@@ -5,25 +5,24 @@
 #include <stdarg.h>
 #include <stdlib.h>
 #include <stdarg.h>
-#include <unistd.h>
+/* #include <unistd.h> */
 #include <limits.h>
 #include <float.h>
-
-int _printf(const char *format, ...);
-int specifier(int *i, const char *format, va_list list);
-int _putchar(char c);
-
 /**
- * struct list - sructure for format
+ * struct mark - sructure for format
  * Description: type to define the behavior of specifier
  * @opointer: first member
  * @fpointer: second member
  */
-typedef struct list
+typedef struct mark
 {
 	char *opointer;
 	int (*fpointer)(va_list p);
-} list_t;
+} mark_t;
+
+int _printf(const char *format, ...);
+int specifier(int *i, const char *format, va_list list);
+int _putchar(char c);
 
 /* all calls from specifier */
 int p_c(va_list p);

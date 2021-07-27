@@ -8,17 +8,28 @@
 int _printf(const char *format, ...)
 {
 	va_list list;
-	int i = 0, len = 0;
+	int i = 0, len = 0, flag = 0;
 
 	va_start(list, format);
 	
 	if ((!format || (format[0] == '%' && !format[1])) ||
 	(format[0] == '%' && format[1] == ' ' && !format[2]))
 		return (-1);
-		for (;(format && format[i]); i++)
+	if (format && format[i])
+	{
+		for (; format[i] != '\0'; i++)
 		{
-			(format[i] == '%') ? (len += specifier(&i, format, list)) : (len += _putchar(format[i]));
+			if (!flag)
+			{
+			(format[i] != '%') ? (len += _putchar(format[i])) : (flag = 1);
+			}
+			else
+			{
+				len += specifier(&i, format, list);
+				flag = 0;
+			}
 		}
 		va_end(list);
+	}
 	return (len);
 }
