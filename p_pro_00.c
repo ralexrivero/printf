@@ -63,7 +63,7 @@ int p_Rt(va_list p)
 	char *s = va_arg(p, char*);
 if (!s)
 {
-	s = "(null)"
+	s = "(null)";
 }
 for (i = 0; s[i] != '\0'; i++)
 {
