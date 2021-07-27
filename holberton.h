@@ -10,6 +10,7 @@
 #include <float.h>
 
 int _printf(const char *format, ...);
+int specifier(int *i, const char *format, va_list list);
 int _putchar(char c);
 
 /*task 0 */
