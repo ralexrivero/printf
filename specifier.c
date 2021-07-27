@@ -9,19 +9,11 @@ int specifier(int *i, const char *format, va_list list)
 	int len2 = 0, k = *i, l = 0, m = 0;
 
 	list_t spec[] = {
-		{"c", p_c},
-		{"s", p_s},
-		{"%", p_p},
-		{"d", p_d},
-		{"i", p_i},
+		{"c", p_c},{"s", p_s},{"%", p_p},
+		{"d", p_d},{"i", p_i},
 		{"b", p_b},
-		{"u", p_u},
-		{"o", p_o},
-		{"x", p_x},
-		{"X", p_Xt},
-		{"S", p_St},
-		{"r", p_r},
-		{"R", p_Rt},
+		{"u", p_u},{"o", p_o},{"x", p_x},{"X", p_Xt},
+		{"S", p_St},{"r", p_r},{"R", p_Rt},
 		{NULL, NULL},
 	};
 	for (; l < 13; l++)
