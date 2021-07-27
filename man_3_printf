@@ -8,9 +8,9 @@ _printf \-
 
 int _printf(const char *format, ...)
 .SH DESCRIPTION
-produce output according to a format
-write output to stdout, the standard output stream
-Returns the number of characters printed
+Produce output according to a format.
+Write output to stdout, the standard output stream.
+Returns the number of characters printed.
 All of these functions write the output under the control of a
 format string that specifies how subsequent arguments (or
 arguments accessed via the variable-length argument facilities
@@ -37,7 +37,24 @@ int _putchar(char c)
 {
         return (write(1, &c, 1));
 }
+/**
+ * p_s - print string
+ * @p: argument pointer
+ * Return: 1
+ */
+int p_s(va_list p)
+{
+	int i = 0;
+	char *s;
 
+	s = va_arg(p, char*);
+	while(s[i] != '\0');
+	{
+		_putchar(s[i]);
+		i++;
+	}
+	return(i);
+}
 
 .SH BUGS
 No known bugs.
