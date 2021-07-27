@@ -7,7 +7,7 @@
  * as little as possible
  *
  */
-int _puthar(char c)
+int _putchar(char c)
 {
 	static char buf[1024];
 	static int i;
