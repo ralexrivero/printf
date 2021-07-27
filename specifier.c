@@ -22,23 +22,8 @@ int specifier(int *i, const char *format, va_list list)
 	};
 	int size = 14;
 
-	// for (; l < size; l++)
-	// {
-	// 	if (*(spec[l].opointer) == format[k + 1])
-	// 	{
-	// 		len2 += spec[l].fpointer(list);
-	// 		*i += 1;
-	// 	}
-	// 	else
-	// 	{
-	// 		m++;
-	// 	}
-	// }
-	// if (m == size)
-	// 	len2 += _putchar(format[k]);
-	// return (len2);
-
-	while (l < 14)
+	
+	while (l < size)
 	{
 		if (*(spec[l].opointer) == format[k + 1])
 		{
@@ -52,7 +37,7 @@ int specifier(int *i, const char *format, va_list list)
 		l++;
 	}
 
-	if (m == 14)
+	if (m == size)
 	{
 		_putchar(format[k]);
 		len2++;
