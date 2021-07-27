@@ -51,40 +51,30 @@ int p_p(va_list __attribute__((unused)) p)
 	return (1);
 }
 /**
-  * p_Rt - rot13
-  * @p: p
-  * Return: contador
+  * p_Rt - rot13 encode string
+  * @p: argument pointer
+  * Return: integer number of characters printed to stdout
   */
-int p_Rt(va_list __attribute__((unused)) p)
+int p_Rt(va_list p)
 {
-	char *a = va_arg(p, char*);
-	int j;
-	int i;
-	int cont = 0;
-	char a1[] = {"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"};
-	char a2[] = {"NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm"};
-
+	int i = 0, j = 0, len2 = 0;
+	char a[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+	char b[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
+	char *s = va_arg(p, char*);
+if (!s)
+{
+	s = "(null)"
+}
+for (i = 0; s[i] != '\0'; i++)
+{
 	for (j = 0; a[j] != '\0'; j++)
 	{
-		for (i = 0; a1[i] != '\0'; i++)
+		if (s[i] == a[j])
 		{
-			{
-				if (a[j] == a1[i])
-				{
-					break;
-				}
-			}
-			if (a[j] == a1[j])
-			{
-				_putchar (a2[i]);
-				cont++;
-			}
-			else
-			{
-				_putchar(a[j]);
-				cont++;
-			}
+		len2 += putchar(b[j]);
+			break;
 		}
 	}
-	return (cont);
+}
+return (len2);
 }
