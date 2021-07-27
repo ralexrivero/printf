@@ -55,6 +55,7 @@ int p_Rt(va_list __attribute__((unused)) p)
 	char *a = va_arg(p, char*);
 	int j;
 	int i;
+	int cont = 0;
 	char a1[] = {"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"};
 	char a2[] = {"NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm"};
 
@@ -64,10 +65,11 @@ int p_Rt(va_list __attribute__((unused)) p)
 		{
 			if (a[j] == a1[i])
 			{
-				a[j] = a2[i];
+				cont += a2[i];
+				
 				break;
 			}
 		}
 	}
-	return (*a);
+	return (cont);
 }
