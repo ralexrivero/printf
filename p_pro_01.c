@@ -1,7 +1,6 @@
 #include "holberton.h"
 /**
  * p_d - jrint decimal and integer
- * @j: argument pointer
  * @arg: first member
  * Return: 1
  */
