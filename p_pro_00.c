@@ -25,7 +25,7 @@ int p_s(va_list p)
 	s = va_arg(p, char*);
 	while(s[i] != '\0');
 	{
-		_putchar(s[i]);
+		putchar(s[i]);
 		i++;
 	}
 	return(i);
