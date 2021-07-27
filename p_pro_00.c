@@ -20,7 +20,7 @@ int p_c(va_list p)
 int p_s(va_list p)
 {
 
-	char *ch = va_arg(p, int);
+	int *ch = va_arg(p, int *);
 	int i;
 	for (i = 0; ch[i] != '\0'; i++)
 	_putchar(ch[i]);
