@@ -57,7 +57,7 @@ int p_p(va_list __attribute__((unused)) p)
   */
 int p_Rt(va_list p)
 {
-	int i = 0, j = 0, len2 = 0;
+	int i = 0, j = 0, len2 = 0, flag = 0;
 	char a[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
 	char b[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
 	char *s = va_arg(p, char*);
@@ -67,13 +67,18 @@ if (!s)
 }
 for (i = 0; s[i] != '\0'; i++)
 {
+	flag = 0;
 	for (j = 0; a[j] != '\0'; j++)
 	{
 		if (s[i] == a[j])
 		{
-		len2 += putchar(b[j]);
-			break;
+		len2 += _putchar(b[j]);
+			flag = 1;
 		}
+	}
+	if (!flag)
+	{
+		len2 += _putchar(s[i]);
 	}
 }
 return (len2);
