@@ -13,6 +13,11 @@ int _printf(const char *format, ...);
 int specifier(int *i, const char *format, va_list list);
 int _putchar(char c);
 
+/**
+ * struct list: sructure for format
+ * @opointer: first member
+ * @fpointer: second member
+ */
 typedef struct list
 {
 	char *opointer;
