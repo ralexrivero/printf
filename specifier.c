@@ -1,4 +1,5 @@
 #include "holberton.h"
+#define BUFFER_SIZE 1024
 /**
  * specifier - looks for the specifier and call prototypes
  * @i: member i
