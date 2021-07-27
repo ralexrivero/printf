@@ -70,8 +70,13 @@ int p_Rt(va_list __attribute__((unused)) p)
 		{
 			if (a[j] == a1[i])
 			{
-				cont += a2[i];				
-				break;
+				_putchar (a2[i]);				
+				cont++;
+			}
+			else
+			{
+				_putchar (a[i]);
+				cont++;
 			}
 		}
 	}
