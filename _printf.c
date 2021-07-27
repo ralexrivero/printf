@@ -2,15 +2,17 @@
 /**
  * _printf - emulate the original printf
  * @format: string to print and format by specifier
+ * Description: prints better than the original printf, belive in that
  * Return: lenght of the output
  */
 int _printf(const char *format, ...)
 {
-	int i = 0, len = 0, flag = 0;
+	unsigned int i = 0, len = 0, flag = 0;
 	va_list list;
 
-	if (format == NULL || format[i] == '\n' || format[i] == '\0' ||
-	(format[i] == '%' && !format[i + 1]))
+	va_start(list, format);
+	if ((format == NULL) || (format[0] == '%' && ((!format[1]) || format[1] == ' ')) || (format == NULL || format[i] == '\n' || format[i] == '\0' ||
+	(format[i] == '%' && !format[i + 1])))
 	{
 	return (-1);
 	}
