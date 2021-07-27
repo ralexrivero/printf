@@ -19,16 +19,23 @@ int p_c(va_list p)
  */
 int p_s(va_list p)
 {
-	int i = 0;
-	char *s;
+	// int i = 0;
+	// char *s;
 
-	s = va_arg(p, char*);
-	while(s[i] != '\0');
-	{
-		putchar(s[i]);
-		i++;
-	}
-	return(i);
+	// s = va_arg(p, char*);
+	// while(s[i] != '\0');
+	// {
+	// 	write(s[i]);
+	// 	i++;
+	// }
+	// return(1);
+
+	char *ch = va_arg(p, int);
+	int i;
+	for (i = 0; ch[i] != '\0'; i++)
+	_putchar(ch[i]);
+
+	return(1);
 }
 /**
  * p_p - print percent

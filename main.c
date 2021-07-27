@@ -24,14 +24,14 @@ _printf("Character:[%c]\n", 'M');
 printf("Character:[%c]\n", 'M');
 _printf("");
 printf("");
-_printf("%c\n", 'a');
-printf("%c\n", 'a');
+_printf("hola: %c Colo y Joaco\n", 'd');
+printf("hola: %c Colo y Joaco\n", 'd');
 _printf("\n");
 printf("\n");
-// _printf("finish %s\n", "now");
-// printf("finish %s\n", "now");
-// _printf("String:[%s]\n", "I am a string !");
-// printf("String:[%s]\n", "I am a string !");
+_printf("finish %s\n", "now");
+printf("finish %s\n", "now");
+_printf("String:[%s]\n", "I am a string !");
+printf("String:[%s]\n", "I am a string !");
 return (0);
 }
 
