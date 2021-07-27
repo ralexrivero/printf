@@ -2,7 +2,7 @@
 .\" Contact 2787@holbertonschool.com to correct errors or typos.
 .TH _printf (3) "7/24/2021" "5.0" "_printf Programmer's Manual"
 .SH NAME
-_printf \-
+_printf 
 .SH SYNOPSIS
 /**
  * _printf - print
