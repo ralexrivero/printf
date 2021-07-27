@@ -33,7 +33,6 @@ int specifier(int *i, const char *format, va_list list)
 		{
 			m++;
 		}
-		l++;
 	}
 	if (m == 13)
 		len2 += _putchar(format[k]);
