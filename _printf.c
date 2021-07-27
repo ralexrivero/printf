@@ -11,19 +11,15 @@ int _printf(const char *format, ...)
 	va_list list;
 
 	va_start(list, format);
-	if (format == NULL || (format[0] == '%' && format[1] == '\0'))
+	if (!format || (format[0] == '%' && !format[i + 1]))
 		return (-1);
-
 	if (format && format[i])
 	{
 		for (i = 0; format[i] != '\0'; i++)
 		{
 			if (!flag)
 			{
-				if (format[i] != '%')
-					len += _putchar(format[i]);
-				else
-					flag = 1;
+			(format[i] != '%') ? (len += _putchar(format[i])) : (flag = 1);
 			}
 			else
 			{
