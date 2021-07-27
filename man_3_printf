@@ -4,6 +4,11 @@
 .SH NAME
 _printf \-
 .SH SYNOPSIS
+/**
+ * _printf - print
+ * @format: cadena
+ * Return: dad
+*/
 #include "holberton.h"
 
 int _printf(const char *format, ...)
@@ -32,6 +37,11 @@ an optional length modifier.
 .B %% -  prints a single perecentage sign to the stream
 .B %i / %d - prints signed decimal integer
 .SH EXAMPLES
+/**
+ * _putchar - print char
+ * @c: argument pointer
+ * Return: write(1, &c, 1
+ */
 #include <unistd.h>
 int _putchar(char c)
 {

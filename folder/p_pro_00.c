@@ -50,4 +50,36 @@ int p_p(va_list __attribute__((unused)) p)
 	_putchar('%');
 	return (1);
 }
+/**
+ * p_d - print double
+ * @p: argument pointer
+ * Return: 1
+ */
 
+/**
+<<<<<<< HEAD
+ * int p_d(va_list p)
+=======
+ *  int p_d(va_list p)
+>>>>>>> 1e00b4036f79904d84e1f1375ecd0c2104aff323
+ * {
+ *	int ch = (char)va_arg(p, int);
+ *
+ *	_putchar(ch);
+ * }
+ */
+
+/**
+ * p_i - print integer
+ * @p: argument pointer
+ * Return: 1
+ */
+
+/**
+ * int p_i(va_list p)
+ * {
+ *	int ch = (char)va_arg(p, int);
+ *
+ *	_putchar(ch);
+ * }
+ */
