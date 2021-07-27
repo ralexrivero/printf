@@ -40,6 +40,18 @@ _printf("Len:[%d]\n", len);
 printf("Len:[%d]\n", len2);
 _printf("Unknown:[%r]\n");
 printf("Unknown:[%r]\n");
+_printf(NULL);
+printf(NULL);
+_printf("% ");
+printf("% ");
+_printf("");
+printf("");
+_printf("%c", "gol");
+printf("%c", "gol");
+_printf("\n");
+printf("\n");
+_printf("finish %s", "now");
+printf("finish %s", "now");
 return (0);
 }
 

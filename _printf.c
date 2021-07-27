@@ -11,11 +11,8 @@ int _printf(const char *format, ...)
 	va_list list;
 
 	va_start(list, format);
-	if ((format == NULL) || (format[0] == '%' && ((!format[1]) || format[1] == ' ')) || (format == NULL || format[i] == '\n' || format[i] == '\0' ||
-	(format[i] == '%' && !format[i + 1])))
-	{
+	if ((!format || (format[0] == '%' && !format[1])) || (format[0] == '%' && format[1] == ' ' && !format[2]) || (format[i] == '%' && !format[i + 1]))
 	return (-1);
-	}
 	if (format && format[i])
 	{va_start(list, format);
 		for (i = 0; format[i] != '\0'; i++)
@@ -29,20 +26,7 @@ int _printf(const char *format, ...)
 			}
 			else
 			{
-				switch (format[i])
-				{
-					case 'c':
-						len += _putchar(va_arg(list, int));
-						break;
-					case 's':
-						len += p_s(va_arg(list, char *));
-						break;
-					case '%':
-						len += _putchar(37);
-						break;
-					default:
-						len += _putchar(format[i]);
-				}
+				len += specifier(&i, format, list);
 				flag = 0;
 			}
 		}
