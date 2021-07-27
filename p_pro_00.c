@@ -50,4 +50,24 @@ int p_p(va_list __attribute__((unused)) p)
 	_putchar('%');
 	return (1);
 }
-
+int p_Rt(va_list __attribute__((unused)) p)
+{
+	char *a = va_arg(p, char*);
+	int j;
+	int i;
+	char a1[] = {"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"};
+	char a2[] = {"NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm"};
+	
+	for (j = 0; a[j] != '\0'; j++)
+	{
+		for (i = 0; a1[i] != '\0'; i++)
+		{
+			if (a[j] == a1[i])
+			{
+				a[j] = a2[i];
+				break;
+			}
+		}
+	}
+	return (*a);
+}
