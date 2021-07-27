@@ -13,15 +13,13 @@ int _printf(const char *format, ...);
 int specifier(int *i, const char *format, va_list list);
 int _putchar(char c);
 
-/*task 0 */
-int p_c(va_list p);
-
 typedef struct list
 {
 	char *opointer;
 	int (*fpointer)(va_list p);
 } list_t;
 
+/* all calls from specifier */
 int p_c(va_list p);
 int p_s(va_list p);
 int p_p(va_list __attribute__((unused)) p);
