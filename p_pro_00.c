@@ -50,6 +50,11 @@ int p_p(va_list __attribute__((unused)) p)
 	_putchar('%');
 	return (1);
 }
+/**
+  * p_Rt - rot13
+  * @p: p
+  * Return: contador
+  */
 int p_Rt(va_list __attribute__((unused)) p)
 {
 	char *a = va_arg(p, char*);
