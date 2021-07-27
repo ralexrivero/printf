@@ -14,7 +14,8 @@ int specifier(int *i, const char *format, va_list list);
 int _putchar(char c);
 
 /**
- * struct list: sructure for format
+ * struct list - sructure for format
+ * Description: type to define the behavior of specifier
  * @opointer: first member
  * @fpointer: second member
  */
