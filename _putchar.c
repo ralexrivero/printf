@@ -1,5 +1,6 @@
 #include "holberton.h"
 #include <unistd.h>
+#define BUFFER_SIZE 1024
 
 /**
  * _putchar - writes the character c to stdout
