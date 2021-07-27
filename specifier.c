@@ -21,7 +21,7 @@ int specifier(int *i, const char *format, va_list list)
 		{"R", p_Rt},
 */		{NULL, NULL},
 	};
-	int size = 14;
+	int size = 3; /*14*/
 
 	
 	while (l < size)
