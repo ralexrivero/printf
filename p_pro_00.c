@@ -57,7 +57,7 @@ int p_Rt(va_list __attribute__((unused)) p)
 	int i;
 	char a1[] = {"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"};
 	char a2[] = {"NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm"};
-	
+
 	for (j = 0; a[j] != '\0'; j++)
 	{
 		for (i = 0; a1[i] != '\0'; i++)
