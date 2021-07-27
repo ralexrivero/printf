@@ -68,14 +68,20 @@ int p_Rt(va_list __attribute__((unused)) p)
 	{
 		for (i = 0; a1[i] != '\0'; i++)
 		{
-			if (a[j] == a1[i])
 			{
-				_putchar (a2[i]);				
+				if (a[j] == a1[i])
+				{
+					break;
+				}
+			}
+			if (a[j] == a1[j])
+			{
+				_putchar (a2[i]);
 				cont++;
 			}
 			else
 			{
-				_putchar (a[i]);
+				_putchar(a[j]);
 				cont++;
 			}
 		}
