@@ -31,6 +31,9 @@ the _printf function identify the placeholder and return the value passed
 - No more than 5 functions per file
 - All files end with a new line
 
+<h3>Specifiers </h3>
+Specifier characters at the end define the type and the interpretation of its corresponding argument:
+
 | Specifier  | Output          |
 |------------|-----------------|
 | `c`        | character       |
