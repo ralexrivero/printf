@@ -6,22 +6,20 @@
  */
  int p_b(va_list p)
  {
-	unsigned int binary = va_arg(p, int), buff[1000];
-	int  len2 = 0, i;
+	unsigned int b = va_arg(p, int), c, buffer[1024];
+	c = b;
+	int i = 0, j = 0, len2 = 0;
 
-	if (binary == 0)
+	while(b > 0)
+	/* b can be divided betwen 2 */
 	{
-		_putchar('0');
-		return (1);
+		buffer[i] = c % 2;
+		b /= 2;
+		i++;
 	}
-	while (binary > 0)
+	for (j = i - 1; j >= 0; --j)
 	{
-		buff[len2] = binary % 2;
-		len2 += binary /= 2;
-	}
-	for (i = len2 - 1; i >= 0; i--)
-	{
-		_putchar(buff[i] + '0');
+		len2 += _putchar(buffer[j]);
 	}
 	return (len2);
  }
