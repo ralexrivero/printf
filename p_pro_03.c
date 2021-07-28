@@ -12,7 +12,7 @@ int i, j, len2;
 c = b;
 i = 0;
 j = 0;
-len2 =0;
+len2 = 0;
 while (b > 0)
 {
 buffer[i] = c % 2;
