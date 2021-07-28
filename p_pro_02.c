@@ -17,7 +17,7 @@ int p_r(va_list p)
 	;
 	for (ri = (li - 1); ri >= 0; ri--)
 	{
-	_putchar(s[ri]);
+	len2 += _putchar(s[ri]);
 	}
 return (len2);
 }
