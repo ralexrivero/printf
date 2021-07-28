@@ -38,11 +38,18 @@ list
 - 
 
 ## Repository files
+<h2>Functions and Files: :card_file_box:</h2>
 
-| file | description |type |
-|--|--|--|
-| _putchar.c | emulates the putchar function |prototype
-| holberton.h | includes prototypes and structres |header
+| **Name**     | **Description**          |
+|--------------|--------------------------|
+| `holberton.h`  | includes prototypes and structres |
+| `_printf.c`    | main function |
+| `p_pro_00.c` | custom function |
+| `p_pro_01.c` | custom functions |
+| `p_pro_02.c`    | custom function |
+| `_putchar.c` | emulates the putchar funtion |
+| `man_3_printf` | man page |
+
 
 ## Compilation
 
