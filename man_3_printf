@@ -33,6 +33,8 @@ specifier.
 .B %s -  prints the argument as a string
 .B %% -  prints a single perecentage sign to the stream
 .B %i / %d - prints signed decimal integer
+.B %R - prints the rot13'ed string
+.B %r - prints the reversed string
 .SH EXAMPLES
 /**
  * _putchar - print char
