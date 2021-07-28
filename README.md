@@ -3,16 +3,11 @@
 ## Content
 
 ## Introduction to the project
-printf() function is **used to print the (“character, string, float, integer, octal and hexadecimal values”)** onto the standard output.
+printf() function is **used to print the (“character, string, float, integer, octal and hexadecimal values, ...”)** onto the standard output.
 
 Print formatted text
 Return number of characters printed
 the _printf function identify the placeholder and return the value passed
-
-## Marcadores de formato
-
-list
-
 
 
 ## Evironment
@@ -35,14 +30,31 @@ list
 - No allowed to use global variable
 - No more than 5 functions per file
 - All files end with a new line
-- 
+
+<h3>Specifiers </h3>
+Specifier characters at the end define the type and the interpretation of its corresponding argument:
+
+| Specifier  | Output          |
+|------------|-----------------|
+| `c`        | character       |
+| `s`        | string          |
+| `d` or `i` | Signed integer  |
+| `R`        | Rot translation |
+| `r`        | string reverse  |
+| `%`        | %               |
 
 ## Repository files
 
-| file | description |type |
-|--|--|--|
-| _putchar.c | emulates the putchar function |prototype
-| holberton.h | includes prototypes and structres |header
+| **Name**     | **Description**          |
+|--------------|--------------------------|
+| `holberton.h`  | includes prototypes and structres |
+| `_printf.c`    | main function |
+| `p_pro_00.c` | custom function |
+| `p_pro_01.c` | custom functions |
+| `p_pro_02.c`    | custom function |
+| `_putchar.c` | emulates the putchar funtion |
+| `man_3_printf` | man page |
+
 
 ## Compilation
 
