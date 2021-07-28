@@ -7,7 +7,6 @@
 int p_r(va_list p)
 {
 	int li, ri, len2;
-	// int i = 0, len2 = 0;
 	char *s = va_arg(p, char*);
 
 	if (!s)
