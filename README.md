@@ -1,5 +1,5 @@
 # printf - custom function
-### version 0.1 beta
+### version 1.0
 ## Content
 
 ## Introduction to the project
