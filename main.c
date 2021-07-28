@@ -39,6 +39,7 @@ len2 = printf("Percent:[%%]\n");
 _printf("Len:[%d]\n", len);
 printf("Len:[%d]\n", len2);
 _printf("reverse:[%r]\n", "reverse");
+_printf("reverse:[%r]\n", "ola que ase amigo, como le va. Todo bien?");
 /* printf("Unknown:[%r]\n"); */
 _printf("Rot13:[%R]\n", "hola");
 _printf("Rot13:[%R]\n", "ola que ase");
