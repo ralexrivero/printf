@@ -3,16 +3,11 @@
 ## Content
 
 ## Introduction to the project
-printf() function is **used to print the (“character, string, float, integer, octal and hexadecimal values”)** onto the standard output.
+printf() function is **used to print the (“character, string, float, integer, octal and hexadecimal values, ...”)** onto the standard output.
 
 Print formatted text
 Return number of characters printed
 the _printf function identify the placeholder and return the value passed
-
-## Marcadores de formato
-
-list
-
 
 
 ## Evironment
@@ -35,7 +30,15 @@ list
 - No allowed to use global variable
 - No more than 5 functions per file
 - All files end with a new line
-- 
+
+| Specifier  | Output          |
+|------------|-----------------|
+| `c`        | character       |
+| `s`        | string          |
+| `d` or `i` | Signed integer  |
+| `R`        | Rot translation |
+| `r`        | string reverse  |
+| `%`        | %               |
 
 ## Repository files
 <h2>Functions and Files: </h2>
