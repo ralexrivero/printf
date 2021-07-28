@@ -38,7 +38,7 @@ list
 - 
 
 ## Repository files
-<h2>Functions and Files: :card_file_box:</h2>
+<h2>Functions and Files: </h2>
 
 | **Name**     | **Description**          |
 |--------------|--------------------------|
