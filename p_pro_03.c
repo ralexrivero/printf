@@ -8,8 +8,11 @@ int p_b(va_list p)
 {
 unsigned int b = va_arg(p, int), c, buffer[1024];
 c = b;
-int i = 0, j = 0, len2 = 0;
+int i, j, len2;
 
+i = 0;
+j = 0;
+len2 =0;
 while (b > 0)
 /* b can be divided betwen 2 */
 {
