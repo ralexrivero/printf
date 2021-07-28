@@ -44,7 +44,6 @@ Specifier characters at the end define the type and the interpretation of its co
 | `%`        | %               |
 
 ## Repository files
-<h2>Functions and Files: </h2>
 
 | **Name**     | **Description**          |
 |--------------|--------------------------|
