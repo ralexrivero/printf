@@ -14,7 +14,7 @@ int specifier(int *i, const char *format, va_list list)
 	mark_t spec[] = {
 		{"c", p_c}, {"s", p_s}, {"%", p_p},
 		{"d", p_d}, {"i", p_d},
-		{"R", p_Rt}, {"r", p_r}
+		{"R", p_Rt}, {"r", p_r},
 		{NULL, NULL},
 	};
 	int size = 7;
