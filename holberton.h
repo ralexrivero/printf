@@ -38,6 +38,6 @@ int p_Xt(va_list p);
 int p_St(va_list p);
 int p_pt(va_list p);
 int p_r(va_list p);
-int p_Rt(va_list __attribute__((unused)) p);
+int p_Rt(va_list p);
 
 #endif
