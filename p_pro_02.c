@@ -1,6 +1,4 @@
 #include "holberton.h"
-
-/
 /**
  * p_r - print reversed string
  * @p: argument pointer
@@ -8,12 +6,19 @@
  */
 int p_r(va_list p)
 {
-	int len2 = 0;
+	int li, ri, len2;
+	// int i = 0, len2 = 0;
 	char *s = va_arg(p, char*);
-if (*s)
-{
-	int p_r(va_list p + 1);
-	len2 += _putchar(*s);
-}
-	return (len2 = 0);
+
+	if (!s)
+	{
+		s = "(null)";
+	}
+	for (li = 0; s[li] != '\0'; li++)
+	;
+	for (ri = (li - 1); ri >= 0; ri--)
+	{
+	_putchar(s[ri]);
+	}
+return (len2);
 }
