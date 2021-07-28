@@ -16,10 +16,9 @@ int specifier(int *i, const char *format, va_list list)
 		{"d", p_d}, {"i", p_d},
 		{"r", p_r},
 		{"R", p_Rt},
-		{"b", p_b},
 		{NULL, NULL},
 	};
-	int size = 8;
+	int size = 7;
 
 	while (l < size)
 	{
