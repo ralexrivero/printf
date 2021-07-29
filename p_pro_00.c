@@ -43,7 +43,7 @@ int p_s(va_list p)
 /**
  * p_p - print percent
  * @p: argument pointer
- * Return: 1
+ * Return: length of the string
  */
 int p_p(va_list __attribute__((unused)) p)
 {
