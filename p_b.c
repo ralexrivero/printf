@@ -7,10 +7,16 @@
  */
 int p_b(va_list p)
 {
-	unsigned int bin = va_arg(p, int), buff[1000];
-	int  count = 0, i;
+	unsigned int reverse_binary[1024];
+	int n = va_arg(p, int), i = 0;
 
-	if (bin == 0)
+	if (n == 0)
+	{
+		_putchar('0');
+		return (1);
+	}
+
+	while (n != 0)
 	{
 		_putchar('0');
 		return (1);
