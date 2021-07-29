@@ -42,8 +42,8 @@ int specifier(int *i, const char *format, va_list list)
 
 	if (m == size)
 	{
-		_putchar(format[k]);
-		len2++;
+		len2 += _putchar(format[k]);
+		
 	}
 
 	return (len2);
