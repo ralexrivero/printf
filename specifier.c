@@ -12,7 +12,7 @@ int specifier(int *i, const char *format, va_list list)
 	int len2 = 0, k = *i, l = 0, m = 0;
 
 	mark_t spec[] = {
-		{"b", p_b},
+		/*{"b", p_b},*/
 		{"c", p_c},
 		{"d", p_d},
 		{"i", p_d},

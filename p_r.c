@@ -6,7 +6,7 @@
  */
 int p_r(va_list p)
 {
-	int li, ri, lenr;
+	int li, ri, len2;
 	char *s = va_arg(p, char*);
 
 	if (!s)
@@ -17,7 +17,7 @@ int p_r(va_list p)
 	;
 	for (ri = (li - 1); ri >= 0; ri--)
 	{
-	lenr += _putchar(s[ri]);
+	len2 += _putchar(s[ri]);
 	}
-return (lenr);
+return (len2);
 }

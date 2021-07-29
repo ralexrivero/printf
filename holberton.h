@@ -2,7 +2,6 @@
 #define HOLBERTON_H
 
 #include <stdio.h>
-#include <stdarg.h>
 #include <stdlib.h>
 #include <stdarg.h>
 #include <unistd.h>

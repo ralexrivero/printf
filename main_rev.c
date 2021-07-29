@@ -14,7 +14,6 @@ char len[] = "Hola tu";
 _printf("Let's try to printf a simple sentence.\n");
 _printf("reverse:%s: %r\n", "revesed string");
 _printf("reverse:%s %r\n", "123456789");
-_printf("reverse:%s %r\n", len);
-_printf("reverse:%s y %s: %r y %r\n", len, "hola");
+_printf("reverse:%r\n", len);
 return (0);
 }
