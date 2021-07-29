@@ -9,20 +9,12 @@
  */
 int main(void)
 {
-int len;
-int len2;
-unsigned int ui;
-void *addr;
+char len[] = "Hola tu";
 
-len = _printf("Let's try to printf a simple sentence.\n");
-len2 = printf("Let's try to printf a simple sentence.\n");
-ui = (unsigned int)INT_MAX + 1024;
-addr = (void *)0x7ffe637541f0;
-len = _printf("Percent:[%%]\n");
-len2 = printf("Percent:[%%]\n");
-_printf("reverse: %r\n", "revesed string");
-_printf("reverse: %r\n"), "123456789";
-_printf("reverse: %r\n", len);
-_printf("reverse: %r y %r\n", len, "hola");
+_printf("Let's try to printf a simple sentence.\n");
+_printf("reverse:%s: %r\n", "revesed string");
+_printf("reverse:%s %r\n", "123456789");
+_printf("reverse:%s %r\n", len);
+_printf("reverse:%s y %s: %r y %r\n", len, "hola");
 return (0);
 }
