@@ -6,18 +6,19 @@
  */
 int p_r(va_list p)
 {
-	int li, ri, len2;
+	int li = 0, ri = 0;
 	char *s = va_arg(p, char*);
 
 	if (!s)
 	{
 		s = "(null)";
 	}
-	for (li = 0; s[li] != '\0'; li++)
-	;
-	for (ri = (li - 1); ri >= 0; ri--)
+	while (s[i])
+	i++;
+	
+	for (ri = li - 1; ri >= 0; ri--)
 	{
-	len2 += _putchar(s[ri]);
+	_putchar(s[ri]);
 	}
-return (len2);
+return (li);
 }

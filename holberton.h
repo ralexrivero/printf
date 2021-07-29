@@ -6,6 +6,8 @@
 #include <stdarg.h>
 #include <limits.h>
 #include <float.h>
+#include <unistd.h>
+
 /**
  * struct mark - sructure for format
  * Description: type to define the behavior of specifier
