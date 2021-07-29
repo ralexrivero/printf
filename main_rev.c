@@ -23,5 +23,6 @@ len2 = printf("Percent:[%%]\n");
 _printf("reverse: %r\n", "revesed string");
 _printf("reverse: %r\n"), "123456789";
 _printf("reverse: %r\n", len);
+_printf("reverse: %r y %r\n", len, "hola");
 return (0);
 }
