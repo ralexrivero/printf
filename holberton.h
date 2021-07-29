@@ -24,6 +24,19 @@ int _printf(const char *format, ...);
 int specifier(int *i, const char *format, va_list list);
 int _putchar(char c);
 
+/**
+ * struct noncustom - non custom specifier
+ * when a flag specifier is passed to _printf()
+ * @sum: '+' character
+ * @empty: ' ' character
+ * @hash: '#' character
+ */
+typedef struct noncustom
+{
+	int sum;
+	int empty;
+	int hash;
+} noncustom_t;
 /* all calls from specifier */
 int p_c(va_list p);
 int p_s(va_list p);

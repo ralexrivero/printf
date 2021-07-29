@@ -1,8 +1,8 @@
 #include "holberton.h"
 /**
- * p_d - jrint decimal and integer
+ * p_d - print decimal and integer
  * @arg: first member
- * Return: 1
+ * Return: length of output
  */
 
 int p_d(va_list arg)

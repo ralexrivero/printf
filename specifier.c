@@ -12,17 +12,19 @@ int specifier(int *i, const char *format, va_list list)
 	int len2 = 0, k = *i, l = 0, m = 0;
 
 	mark_t spec[] = {
+		{"b", p_b},
 		{"c", p_c},
-		{"s", p_s},
-		{"%", p_p},
 		{"d", p_d},
 		{"i", p_d},
+		{"o", p_o},
+		{"%", p_p},
 		{"r", p_r},
 		{"R", p_Rt},
-		{"b", p_b},
+		{"s", p_s},
+		{"u", p_u},
 		{NULL, NULL},
 	};
-	int size = 8;
+	int size = 10;
 
 	while (l < size)
 	{
