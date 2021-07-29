@@ -7,27 +7,24 @@
  */
 int p_b(va_list p)
 {
-	int n = va_arg(p, int);
-	unsigned int reverse_binary[1024];
-	int i = 0, len2 = 0;
+	unsigned int bin = va_arg(p, int), buff[1000];
+	int  count = 0, i;
 
-	if (n == 0)
-	len2 += _putchar('0');
-
-	while (n != 0)
+	if (bin == 0)
 	{
-	reverse_binary[i] = n % 2;
-	n /= 2;
-	i++;
+		_putchar('0');
+		return (1);
 	}
-/* the binary conversion was made in reverse */
-	i--;
-/* decrement because the i points to the wrong poisition */
 
-	while (i >= 0)
+	while (bin > 0)
 	{
-	len2 += _putchar(reverse_binary[i] + '0');
-	i--;
-}
-return (len2);
+		buff[count] = bin % 2;
+		bin /= 2;
+		count++;
+	}
+	for (i = count - 1; i >= 0; i--)
+	{
+		_putchar(buff[i] + '0');
+	}
+	return (count);
 }
