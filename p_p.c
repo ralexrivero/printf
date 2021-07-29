@@ -9,3 +9,4 @@ int p_p(va_list __attribute__((unused)) p)
 	_putchar('%');
 	return (1);
 }
+

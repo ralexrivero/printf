@@ -9,13 +9,14 @@ int p_o(va_list p)
 {
 	unsigned int octal = va_arg(p, int), buff[1000];
 	int  count = 0, i;
+
 	if (octal == 0)
 	{
 		_putchar('0');
 		return (1);
 	}
 
-	while (octal> 0)
+	while (octal > 0)
 	{
 		buff[count] = octal % 8;
 		octal /= 8;
@@ -27,3 +28,4 @@ int p_o(va_list p)
 	}
 	return (count);
 }
+

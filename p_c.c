@@ -14,3 +14,4 @@ int p_c(va_list p)
 
 	return (1);
 }
+

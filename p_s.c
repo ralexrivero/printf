@@ -24,3 +24,4 @@ int p_s(va_list p)
 	}
 	return (i);
 }
+
