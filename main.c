@@ -1,15 +1,24 @@
+#include <stdio.h>
+#include <stdlib.h>
 #include "holberton.h"
 
 /**
  * main - Entry point
  *
- * Return: Always 0
+ * Return: 0 on success, error code otherwise
  */
 int main(void)
 {
-    _printf("%b\n", 0);
-    _printf("%b\n", 15);
-    _printf("%b\n", 98);
-    _printf("reverse: %r", "ola que ase");
-    return (0);
+	int len, len2;
+
+	len = _printf("Complete the sentence: You %r nothing, Jon Snow.\n", "");
+	len2 = printf("Complete the sentence: You  nothing, Jon Snow.\n");
+	fflush(stdout);
+	if (len != len2)
+	{
+		printf("Lengths differ.\n");
+		fflush(stdout);
+		return (1);
+	}
+	return (0);
 }
