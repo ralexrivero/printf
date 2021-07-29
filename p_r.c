@@ -2,7 +2,7 @@
 /**
  * p_r - print reversed string
  * @p: argument pointer
- * Return: length of the output sent to the output
+ * Return: length of the output
  */
 int p_r(va_list p)
 {
