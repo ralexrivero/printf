@@ -299,5 +299,8 @@ int main(void)
 		printf ("\n\n30 CASES CHECKED, %d ERRORS.\n\n", cont);
 		RESET;
 	}
+	_printf("binary:%i, %b", 0);
+	_printf("binary:%i, %b", 15);
+	_printf("binary:%i, %b", 98);
 	return (cont);
 }
