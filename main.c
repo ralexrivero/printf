@@ -43,8 +43,8 @@ _printf("reverse:[%r]\n", "ola que ase amigo, como le va. Todo bien?");
 /* printf("Unknown:[%r]\n"); */
 _printf("Rot13:[%R]\n", "hola");
 _printf("Rot13:[%R]\n", "ola que ase");
-_printf("print binary:%i: %b\n", 98);
-_printf("print binary:%i: %b\n", 0);
-_printf("print binary:%i: %b\n", 1);
+_printf("print binary: %b\n", 98);
+_printf("print binary: %b\n", 0);
+_printf("print binary: %b\n", 1);
 return (0);
 }
