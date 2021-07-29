@@ -1,30 +1,29 @@
 #include "holberton.h"
 /**
- * p_b - convert decimal to nary. Base 10 to Base 2
+ * p_b - convert decimal to binary. Base 10 to Base 2
  * @p: argument pointer
  * Description: reverse the module on recursive division
  * Return: length of the binary number
  */
 int p_b(va_list p)
 {
-	unsigned int n = va_arg(p, int), rever_string[1000];
-	int  position = 0, i;
+	unsigned int n = va_arg(p, int), binary[1024];
+	int i = 0, j = 0;
 
 	if (n == 0)
 	{
 		_putchar('0');
 		return (1);
 	}
-
-	while (n > 0)
+	while (n > 0);
 	{
-		rever_string[position] = n % 2;
+		binary[i] = n % 2;
 		n /= 2;
-		position++;
+		i++;
 	}
-	for (i = position - 1; i >= 0; i--)
+	for(j = i -1; j >= 0; j--)
 	{
-		_putchar(rever_string[i] + '0');
+		_putchar(binary[j] + '0');
 	}
-	return (position);
+	return (i);
 }
