@@ -1,5 +1,5 @@
 # printf - custom function
-### version 0.1 beta
+### version 1.0
 ## Content
 
 ## Introduction to the project
@@ -60,14 +60,24 @@ Specifier characters at the end define the type and the interpretation of its co
 
 ``gcc -Wall -Werror -Wextra -pedantic *.c``
 
-# Wiki
+# Flowchart
+
+<br>
+<div>
+<img align="left" alt="_printf flowchart" width="720" src="https://raw.githubusercontent.com/ralexrivero/printf/main/printf.svg" />
+</div>
+<br>
+
 
 ## Authors
 ``Diego Guarise`` & ``Ronald Rivero`` & ``Joaquin Pintaluba``
 
 
 About authors
+
+
 Diego 
+
 
 <br>
 <a href="https://github.com/Diego-Guarise" target="_blank"> <img align="left" alt="Diego Guarise | Github" width="22px" src="https://raw.githubusercontent.com/ralexrivero/xelar_theme_profile/main/icons/github-icon.svg" /> </a>
@@ -75,7 +85,9 @@ Diego
 <a href="mailto:l.guariselopez@gmail.com?subject=Contact" target="_blank"><img align="left" width="22" src="https://raw.githubusercontent.com/ralexrivero/xelar_theme_profile/main/icons/envelope-regular_blue.svg" alt="email me"> </a>
 <br>
 
+
 Ronald
+
 
 <br>
 <a href="https://github.com/ralexrivero" target="_blank"> <img align="left" alt="Ronald Rivero | Github" width="22px" src="https://raw.githubusercontent.com/ralexrivero/xelar_theme_profile/main/icons/github-icon.svg" /> </a>
@@ -85,7 +97,9 @@ Ronald
 <a href="mailto:ralexrivero@gmail.com?subject=Contact" target="_blank"><img align="left" width="22" src="https://raw.githubusercontent.com/ralexrivero/xelar_theme_profile/main/icons/envelope-regular_blue.svg" alt="email me"> </a>
 <br>
 
+
 Joaquin
+
 
 <br>
 <a href="https://github.com/jopinta" target="_blank"> <img align="left" alt="Joaquin Pintaluba | Github" width="22px" src="https://raw.githubusercontent.com/ralexrivero/xelar_theme_profile/main/icons/github-icon.svg" /> </a>
