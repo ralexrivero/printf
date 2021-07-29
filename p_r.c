@@ -13,9 +13,9 @@ int p_r(va_list p)
 	{
 		s = "(null)";
 	}
-	while (s[i])
-	i++;
-	
+	while (s[li])
+	li++;
+
 	for (ri = li - 1; ri >= 0; ri--)
 	{
 	_putchar(s[ri]);
