@@ -22,7 +22,7 @@ int specifier(int *i, const char *format, va_list list)
 		{"s", p_s},
 		{NULL, NULL},
 	};
-	int size = sizeof(spec)/sizeof(mark_t) -1;
+	int size = sizeof(spec) / sizeof(mark_t) - 1;
 
 	while (l < size)
 	{
@@ -41,7 +41,7 @@ int specifier(int *i, const char *format, va_list list)
 	if (m == size)
 	{
 		len2 += _putchar(format[k]);
-		
+
 	}
 
 	return (len2);
