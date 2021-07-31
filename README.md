@@ -106,11 +106,8 @@ $ man ./man_3_printf
 <br>
 
 
-## Authors
+## About authors
 ``Diego Guarise`` & ``Ronald Rivero`` & ``Joaquin Pintaluba``
-
-
-About authors
 
 
 ###### Diego 
