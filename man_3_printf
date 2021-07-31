@@ -36,36 +36,39 @@ specifier.
 .B %R - prints the rot13'ed string
 .B %r - prints the reversed string
 .SH EXAMPLES
-/**
- * _putchar - print char
- * @c: argument pointer
- * Return: write(1, &c, 1
- */
-#include <unistd.h>
-int _putchar(char c)
-{
-        return (write(1, &c, 1));
-}
-/**
- * p_s - print string
- * @p: argument pointer
- * Return: 1
- */
-int p_s(va_list p)
-{
-	int i = 0;
-	char *s;
-
-	s = va_arg(p, char*);
-	while(s[i] != '\0');
-	{
-		_putchar(s[i]);
-		i++;
-	}
-	return(i);
-}
-
-.SH BUGS
+.PP
+ With main.c we can test our functions:
+.PP
+#include "holberton.h"
+.PP
+_printf("chararacter: %c\n", 'R');
+.PP
+Output: character: R
+.PP
+_printf("string: %s\n", "Hi Betty !");
+.PP
+Output: string: Hi Betty !
+.PP
+_printf("integer: %i\n", 80);
+.PP
+Output: integer: 80
+.PP
+_printf("integrer %i\n", 14);
+.PP
+Output: integrer 14
+.PP
+_printf("decimal: %d\n", 100);
+.PP
+Output: decimal: 100
+.PP
+_printf("octal %o\n", 92);
+.PP
+Output: octal 134
+.PP
+_printf("Percent:[%%]\n");
+.PP
+Output: Percent:[%]
+.PP
 No known bugs.
 .SH AUTHORS
 Diego G, Ronald R, Joaquin P
