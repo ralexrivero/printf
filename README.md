@@ -42,6 +42,9 @@ Specifier characters at the end define the type and the interpretation of its co
 | `R`        | Rot translation |
 | `r`        | string reverse  |
 | `%`        | %               |
+| `b`        | Binary convertion |
+| `o`        | octal convertion |
+| `u`        | unsigned convertion              |
 
 ## Repository files
 
@@ -49,9 +52,7 @@ Specifier characters at the end define the type and the interpretation of its co
 |--------------|--------------------------|
 | `holberton.h`  | includes prototypes and structres |
 | `_printf.c`    | main function |
-| `p_pro_00.c` | custom function |
-| `p_pro_01.c` | custom functions |
-| `p_pro_02.c`    | custom function |
+| `p_*.c` | custom function, one per function |
 | `_putchar.c` | emulates the putchar funtion |
 | `man_3_printf` | man page |
 
