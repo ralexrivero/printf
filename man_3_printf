@@ -69,6 +69,12 @@ _printf("Percent:[%%]\n");
 .PP
 Output: Percent:[%]
 .PP
+.B Return value
+.sp
+On success, _printf returns the number of printed characters. If
+.I format
+is NULL or error, it returns -1.
+.sp
 No known bugs.
 .SH AUTHORS
 Diego G, Ronald R, Joaquin P
