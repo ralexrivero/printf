@@ -94,7 +94,7 @@ _printf functions examples:
  
 ### Manual ###
 To review the _printf function manual execute in your terminal:
-~~~
+
 $ man ./man_3_printf
 
 # Flowchart
