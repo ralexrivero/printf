@@ -25,7 +25,7 @@ the _printf function identify the placeholder and return the value passed
 - Wall -Werror -Wextra -pedantic -std=gnu89
 - Style guidelines: [Betty style](https://github.com/holbertonschool/Betty/wiki)
 
-## Specifitacation
+## Project specifitacation
 
 - No allowed to use global variable
 - No more than 5 functions per file
@@ -55,16 +55,53 @@ Specifier characters at the end define the type and the interpretation of its co
 | `_putchar.c` | emulates the putchar funtion |
 | `man_3_printf` | man page |
 
+## Install
+To install execute in terminal
+git clone https://github.com/ralexrivero/printf.git
+then with a compilation program like gcc use de command above
 
 ## Compilation
 
 ``gcc -Wall -Werror -Wextra -pedantic *.c``
 
+## Main
+
+The repository includes a main with test functions
+
+##### EXAMPLES #####
+_printf functions examples:
+
+- _printf("char: [%c]\n", 'H');
+  + Output: char: [H]
+
+- _printf("string: [%s]\n", "Hello people !");
+  + Output: string: [Hello people !]
+
+- _printf("integer: [%i]\n", 26);
+  + Output: integer: [26]
+
+- _printf("decimal: [%d]\n", 10000);
+  + Output: decimal: [10000]
+
+- _printf("octal [%o]\n", 92);
+  + Output: octal [134]
+
+- _printf("Percent: [%%%%]\n");
+  + Output: Percent: [%%]
+
+- _printf("Reverse: [%r]\n", "Programming is great!");
+  + Output: Reverse: [!taerg si gnimmargorP]
+ 
+### Manual ###
+To review the _printf function manual execute in your terminal:
+~~~
+$ man ./man_3_printf
+
 # Flowchart
 
 <br>
 <div>
-<img align="left" alt="_printf flowchart" width="720" src="https://raw.githubusercontent.com/ralexrivero/printf/main/printf.svg" />
+<img align="left" alt="_printf flowchart" width="100%" src="https://raw.githubusercontent.com/ralexrivero/printf/main/printf.svg" />
 </div>
 <br>
 
@@ -76,7 +113,7 @@ Specifier characters at the end define the type and the interpretation of its co
 About authors
 
 
-Diego 
+###### Diego 
 
 
 <br>
@@ -86,7 +123,7 @@ Diego
 <br>
 
 
-Ronald
+###### Ronald
 
 
 <br>
@@ -98,7 +135,7 @@ Ronald
 <br>
 
 
-Joaquin
+###### Joaquin
 
 
 <br>
