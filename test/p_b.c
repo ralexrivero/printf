@@ -25,5 +25,5 @@ int p_b(va_list p)
 	{
 		_putchar(binary[j] + '0');
 	}
-return (i);
+ return (i);
 }
