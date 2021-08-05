@@ -10,6 +10,8 @@
 int main(void)
 {
     _printf("Unknown:[%b]\n", 15);
-    printf("Unknown:[%b]\n", 1200);
+    _printf("Unknown:[%b]\n", 16);
+	_printf("Unknown:[%b]\n", 1200);
+	_printf("Unknown:[%b]\n", 800);
     return (0);
 }
