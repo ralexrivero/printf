@@ -8,7 +8,7 @@
  */
 int p_x(va_list p)
 {
-	unsigned long int varULL_step = va_arg(p, int), varULL_temp = 0;
+	unsigned int varULL_step = va_arg(p, int), varULL_temp = 0;
 	char varChr_hexa_temp[1024];
 	int i = 0, count = 0;
 
