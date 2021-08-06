@@ -22,6 +22,8 @@ int specifier(int *i, const char *format, va_list list)
 		{"R", p_Rt},
 		{"s", p_s},
 		{"u", p_u},
+		{"X", p_Xu},
+		{"x", p_x},
 		{NULL, NULL},
 	};
 	int size = sizeof(spec) / sizeof(mark_t) - 1;

@@ -47,7 +47,7 @@ int p_b(va_list p);
 int p_u(va_list p);
 int p_o(va_list p);
 int p_x(va_list p);
-int p_Xt(va_list p);
+int p_Xu(va_list p);
 int p_St(va_list p);
 int p_pt(va_list p);
 int p_r(va_list p);
