@@ -15,7 +15,7 @@ int p_x(va_list p)
 	if (varULL_step == 0)
 	{
 		_putchar('0');
-		return (2);
+		count = 1;
 	}
 	else
 	while (varULL_step != 0)
