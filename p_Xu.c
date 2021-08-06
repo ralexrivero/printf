@@ -12,6 +12,11 @@ int p_Xu(va_list p)
 	char varChr_hexa_temp[1024];
 	int i = 0, count = 0;
 
+	if (varULL_step == 0)
+	{
+		_putchar('0');
+		_putchar('0');
+	}
 	while (varULL_step != 0)
 	{
 	varULL_temp = varULL_step % 16;
