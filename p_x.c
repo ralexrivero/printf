@@ -17,6 +17,7 @@ int p_x(va_list p)
 		_putchar('0');
 		return (2);
 	}
+	else
 	while (varULL_step != 0)
 	{
 		varULL_temp = varULL_step % 16;
