@@ -28,7 +28,7 @@ int specifier(int *i, const char *format, va_list list)
 		{NULL, NULL},
 	};
 	int size = sizeof(spec) / sizeof(mark_t) - 1;
-	
+
 	while (l < size)
 	{
 		if (*(spec[l].opointer) == format[k + 1])
