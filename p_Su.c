@@ -24,10 +24,8 @@ int p_Su(va_list p)
 		{
 			write(1, "\\x", 3);
 			count += 2;
-		
 			ascii_step = ptrChr_str[i];
-
-			while(ascii_step != 0)
+			while (ascii_step != 0)
 			{
 				ascii_temp = ascii_step % 16;
 				if (ascii_temp >= 0 && ascii_temp < 10)
@@ -35,7 +33,7 @@ int p_Su(va_list p)
 					ascii_hexa[j] = '0' + ascii_temp;
 					j--;
 				}
-				else if(ascii_temp >= 10 && ascii_temp < 16)
+				else if (ascii_temp >= 10 && ascii_temp < 16)
 				{
 					ascii_hexa[j] = 'A' + (ascii_temp - 10);
 					j--;
