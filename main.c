@@ -1,24 +1,18 @@
-#include <stdio.h>
-#include <stdlib.h>
 #include "holberton.h"
 
 /**
  * main - Entry point
  *
- * Return: 0 on success, error code otherwise
+ * Return: Always 0
  */
 int main(void)
 {
-	int len, len2;
-
-	len = _printf("%S", "\n");
-	len2 = printf("\\x0A");
-	fflush(stdout);
-	if (len != len2)
-	{
-		printf("Lengths differ.\n");
-		fflush(stdout);
-		return (1);
-	}
-	return (0);
+    _printf("%S\n", "Holberton\nSchool");
+    _printf("%S\n", "No special character.");
+    _printf("%S\n", "\n");
+    _printf("%S\n", "\x01\x02\x03\x04\x05\x06\x07");
+    _printf("Could you print some non-prntable characters?\n%S\nThanks!\n", "Sure:\x1F\x7F\n");
+    _printf("");
+    _printf("- What did you say?\n- %S\n- That's what I thought.\n", "");
+    return (0);
 }

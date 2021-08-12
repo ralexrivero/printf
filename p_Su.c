@@ -28,6 +28,7 @@ int p_Su(va_list p)
 			while (ascii_step != 0)
 			{
 				ascii_temp = ascii_step % 16;
+				j = 1;
 				if (ascii_temp >= 0 && ascii_temp < 10)
 				{
 					ascii_hexa[j] = '0' + ascii_temp;
@@ -39,11 +40,14 @@ int p_Su(va_list p)
 					j--;
 				}
 				ascii_step /= 16;
+
 			}
+				count += _putchar(ascii_hexa[0]);
+				count += _putchar(ascii_hexa[1]);
 		}
 		i++;
+
 	}
-	count += _putchar(ascii_hexa[0]);
-	count += _putchar(ascii_hexa[1]);
+	printf("\n%d\n", count);
 	return (count);
 }
