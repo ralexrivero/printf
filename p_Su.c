@@ -40,10 +40,10 @@ int p_Su(va_list p)
 				}
 				ascii_step /= 16;
 			}
-			count += _putchar(ascii_hexa[0]);
-			count += _putchar(ascii_hexa[1]);
 		}
 		i++;
 	}
+	count += _putchar(ascii_hexa[0]);
+	count += _putchar(ascii_hexa[1]);
 	return (count);
 }
