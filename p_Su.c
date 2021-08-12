@@ -48,6 +48,5 @@ int p_Su(va_list p)
 		i++;
 
 	}
-	printf("\n%d\n", count);
 	return (count);
 }
