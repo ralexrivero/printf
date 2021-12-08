@@ -6,7 +6,6 @@
  * are printed this way: \x, followed by the ASCII code value in hexadecimal
  * (upper case - always 2 characters)
  * @p: argument pointer
- * Description: print special characters
  * Return: length of the string
  */
 int p_Su(va_list p)
@@ -48,7 +47,6 @@ int p_Su(va_list p)
 				count += _putchar(ascii_hexa[1]);
 		}
 		i++;
-
 	}
 	return (count);
 }
