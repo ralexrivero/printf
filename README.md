@@ -1,22 +1,23 @@
 # printf - custom function
-### version 1.0
+
+```version 1.1```
+
 ## Content
 
 ## Introduction to the project
-printf() function is **used to print the (“character, string, float, integer, octal and hexadecimal values, ...”)** onto the standard output.
 
-Print formatted text
-Return number of characters printed
-the _printf function identify the placeholder and return the value passed
+```printf()``` function is *used to print the character, string, float, integer, octal and hexadecimal values* to the standard output.
 
+Printf function prints formatted text to the standard output, and returns the number of characters printed. It is a very powerful function, and it is used to print the values of variables, and to print the values of the expressions.
+The printf function identify the placeholder and return the value passed.
 
 ## Evironment
-<div >
-  <a href="https://www.cprogramming.com/" target="_blank"><img height="48px" src="https://raw.githubusercontent.com/ralexrivero/xelar_theme_profile/main/icons/language_c-programming.svg" alt="C programming language" ></a>
-  <a href="https://ubuntu.com/" target="_blank"><img height="48px" src="https://raw.githubusercontent.com/ralexrivero/xelar_theme_profile/main/icons/ubuntu-icon.svg" alt="C programming language"></a>
-    <a href="https://www.vim.org/" target="_blank"><img height="48px" src="https://raw.githubusercontent.com/ralexrivero/xelar_theme_profile/main/icons/Vimlogo.svg" alt="C programming language"></a>
-</div>
 
+<div >
+ <a href="https://www.cprogramming.com/" target="_blank"><img height="48px" src="https://raw.githubusercontent.com/ralexrivero/xelar_theme_profile/main/icons/language_c-programming.svg" alt="C programming language" ></a>
+ <a href="https://ubuntu.com/" target="_blank"><img height="48px" src="https://raw.githubusercontent.com/ralexrivero/xelar_theme_profile/main/icons/ubuntu-icon.svg" alt="C programming language"></a>
+ <a href="https://www.vim.org/" target="_blank"><img height="48px" src="https://raw.githubusercontent.com/ralexrivero/xelar_theme_profile/main/icons/Vimlogo.svg" alt="C programming language"></a>
+</div>
 
 - Language: C
 - OS: Ubuntu 20.04 LTS
@@ -28,10 +29,9 @@ the _printf function identify the placeholder and return the value passed
 ## Project specifitacation
 
 - No allowed to use global variable
-- No more than 5 functions per file
-- All files end with a new line
 
-<h3>Specifiers </h3>
+### Specifiers
+
 Specifier characters at the end define the type and the interpretation of its corresponding argument:
 
 | Specifier  | Output          |
@@ -44,7 +44,7 @@ Specifier characters at the end define the type and the interpretation of its co
 | `%`        | %               |
 | `b`        | Binary convertion |
 | `o`        | octal convertion |
-| `u`        | unsigned convertion              |
+| `u`        | unsigned convertion|
 
 ## Repository files
 
@@ -57,13 +57,16 @@ Specifier characters at the end define the type and the interpretation of its co
 | `man_3_printf` | man page |
 
 ## Install
+
 To install execute in terminal
 git clone https://github.com/ralexrivero/printf.git
 then with a compilation program like gcc use de command above
 
 ## Compilation
 
-``gcc -Wall -Werror -Wextra -pedantic *.c``
+```bash
+gcc -Wall -Werror -Wextra -pedantic *.c
+```
 
 ## Main
 
@@ -72,8 +75,10 @@ The repository includes a main with test functions
 ##### EXAMPLES #####
 _printf functions examples:
 
-- _printf("char: [%c]\n", 'H');
+```bash
+$ _printf("char: [%c]\n", 'H');
   + Output: char: [H]
+```
 
 - _printf("string: [%s]\n", "Hello people !");
   + Output: string: [Hello people !]
@@ -92,7 +97,7 @@ _printf functions examples:
 
 - _printf("Reverse: [%r]\n", "Programming is great!");
   + Output: Reverse: [!taerg si gnimmargorP]
- 
+
 ### Manual ###
 To review the _printf function manual execute in your terminal:
 
@@ -111,7 +116,7 @@ $ man ./man_3_printf
 ``Diego Guarise`` & ``Ronald Rivero`` & ``Joaquin Pintaluba``
 
 
-###### Diego 
+###### Diego
 
 
 <br>
