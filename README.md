@@ -213,7 +213,7 @@ $ man ./man_3_printf
 <div>
 <a href="https://twitter.com/tatinfa" target="_blank">  <img align="left" alt="Joaquin Pintaluba | Twitter" src="https://img.shields.io/twitter/follow/tatinfa?style=social"/> </a>
 
-<a href="https://www.linkedin.com/in/joaquin-pintaluba/" target="_blank"> <img align="left" alt="Joaquin Pintaluba | LinkedIn" src="https://img.shields.io/badge/LinkedIn-follow-blue?style=social&logo=linkedin"/> </a>
+<a href="https://www.linkedin.com/in/joaquín-pintaluba-7191991a3" target="_blank"> <img align="left" alt="Joaquin Pintaluba | LinkedIn" src="https://img.shields.io/badge/LinkedIn-follow-blue?style=social&logo=linkedin"/> </a>
 
 <a href="https://github.com/jopinta" target="_blank"> <img align="left" src="https://img.shields.io/github/followers/jopinta?style=social" alt="Jopinta | Github"> </a>
 </br>
