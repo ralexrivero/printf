@@ -1,4 +1,4 @@
-#include "printf.h"
+#include "main.h"
 
 /**
  * p_c - print character

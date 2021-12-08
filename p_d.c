@@ -1,4 +1,4 @@
-#include "printf.h"
+#include "main.h"
 /**
  * p_d - print decimal and integer
  * @arg: first member

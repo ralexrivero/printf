@@ -12,7 +12,7 @@ version 1.0 release date: 24/07/21
 
 .SH SYNOPSIS
 
-.RB #include <printf.h>
+.RB #include <main.h>
 
 .RB int _printf(const char *restrict format, ...);
 
@@ -58,7 +58,7 @@ _printf("%d", 1);
 
 .SH EXAMPLES
 .PP
-#include "printf.h"
+#include "main.h"
 .PP
 _printf("chararacter: %c", 'R');
 .PP

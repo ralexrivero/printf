@@ -1,4 +1,4 @@
-#include "printf.h"
+#include "main.h"
 /**
  * p_s - print string
  * @p: argument pointer

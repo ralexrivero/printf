@@ -1,4 +1,4 @@
-#include "printf.h"
+#include "main.h"
 /**
  * p_p - print percent
  * @p: argument pointer
