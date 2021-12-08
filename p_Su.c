@@ -1,6 +1,8 @@
 #include "main.h"
 /**
- * p_Su - Non printable characters (0 < ASCII value < 32 or >= 127)
+ * p_Su - conversion specifier S
+ *
+ * Non printable characters (0 < ASCII value < 32 or >= 127)
  * are printed this way: \x, followed by the ASCII code value in hexadecimal
  * (upper case - always 2 characters)
  * @p: argument pointer
