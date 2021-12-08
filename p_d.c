@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include "printf.h"
 /**
  * p_d - print decimal and integer
  * @arg: first member

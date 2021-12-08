@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include "printf.h"
 /**
  * p_s - print string
  * @p: argument pointer

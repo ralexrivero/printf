@@ -34,10 +34,10 @@ Specifier characters at the end define the type and the interpretation of its co
 |------------|-----------------|
 | `c`        | character       |
 | `s`        | string          |
+| `%`        | %               |
 | `d` or `i` | Signed integer  |
 | `R`        | Rot translation |
 | `r`        | string reverse  |
-| `%`        | %               |
 | `b`        | Binary convertion |
 | `o`        | octal convertion |
 | `u`        | unsigned convertion|
@@ -166,12 +166,13 @@ _printf("Reverse: [%r]\n", "Programming is great!");
 Output: Reverse: [!taerg si gnimmargorP]
 ```
 
-### Manual ###
+## Manual
 
-To review the _printf function manual execute in your terminal:
+To get help about the printf function ask the manual pages on the terminal:
 
 ````bash
 $ man ./man_3_printf
+
 ````
 
 # Flowchart

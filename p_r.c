@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include "printf.h"
 /**
  * p_r - print reversed string
  * @p: argument pointer

@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include "printf.h"
 
 /**
  * p_c - print character

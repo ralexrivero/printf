@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include "printf.h"
 /**
  * p_b - convert decimal to binary. Base 10 to Base 2
  * @p: argument pointer
