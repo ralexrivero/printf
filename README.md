@@ -19,16 +19,12 @@ The printf function identify the placeholder and return the value passed.
  <a href="https://www.vim.org/" target="_blank"><img height="48px" src="https://raw.githubusercontent.com/ralexrivero/xelar_theme_profile/main/icons/Vimlogo.svg" alt="C programming language"></a>
 </div>
 
-- Language: C
-- OS: Ubuntu 20.04 LTS
-- Editor: VIM 8.1.2269
-- Compiler: gcc 9.3.0
-- Wall -Werror -Wextra -pedantic -std=gnu89
-- Style guidelines: [Betty style](https://github.com/holbertonschool/Betty/wiki)
-
-## Project specifitacation
-
-- No allowed to use global variable
+* Language: C
+* OS: Ubuntu 20.04 LTS
+* Editor: VIM 8.1.2269
+* Compiler: gcc 9.3.0
+* -Wall -Wextra -Werror -pedantic -std=gnu89 -Wno-format
+* Style guidelines: [Betty style](https://github.com/holbertonschool/Betty/wiki)
 
 ### Specifiers
 
@@ -48,60 +44,135 @@ Specifier characters at the end define the type and the interpretation of its co
 
 ## Repository files
 
-| **Name**     | **Description**          |
+| *Name*      | **Description**          |
 |--------------|--------------------------|
 | `holberton.h`  | includes prototypes and structres |
 | `_printf.c`    | main function |
 | `p_*.c` | custom function, one per function |
-| `_putchar.c` | emulates the putchar funtion |
+| `_putchar.c` | emulates the putchar function |
 | `man_3_printf` | man page |
 
 ## Install
 
-To install execute in terminal
-git clone https://github.com/ralexrivero/printf.git
-then with a compilation program like gcc use de command above
-
-## Compilation
+To install execute in terminal the following command:
 
 ```bash
-gcc -Wall -Werror -Wextra -pedantic *.c
+$ git clone https://github.com/ralexrivero/printf.git
+Cloning into 'printf'...
+remote: Enumerating objects: 1004, done.
+remote: Counting objects: 100% (341/341), done.
+remote: Compressing objects: 100% (246/246), done.
+remote: Total 1004 (delta 208), reused 212 (delta 95), pack-reused 663
+Receiving objects: 100% (1004/1004), 261.72 KiB | 638.00 KiB/s, done.
+Resolving deltas: 100% (618/618), done.
 ```
 
-## Main
+To compile execute in terminal the ```make``` command folowing of any of the targets:
 
-The repository includes a main with test functions
+* `all`: compile all files
+* `full`: test wide use cases with special output
+* `binary`: test binary function
+* `hexa`: test hexadecimal function
+* `octal`: test octal function
+* `reverse`: test reverse function
+* `rot`: test rot function
+* `unsigned`: test unsigned function
+* `char`: test char function
+* `string`: test string function
+* `special`: test special function
+* `fclean`: clean all executable files
 
-##### EXAMPLES #####
+Example of use:
+
+```bash
+$ make all
+gcc -Wall -Wextra -Werror -pedantic -std=gnu89 -Wno-format *.c test/main.c -o printf
+```
+
+Execute the program:
+
+```bash
+$ ./printf
+Let's try to printf a simple sentence.
+Let's try to printf a simple sentence.
+Length:[39, 39]
+Length:[39, 39]
+Negative:[-762534]
+Negative:[-762534]
+Unsigned:[2147484671]
+Unsigned:[2147484671]
+Unsigned octal:[20000001777]
+Unsigned octal:[20000001777]
+Unsigned hexadecimal:[800003ff, 800003FF]
+Unsigned hexadecimal:[800003ff, 800003FF]
+Character:[H]
+Character:[H]
+String:[I am a string !]
+String:[I am a string !]
+Address:[%p]
+Address:[0x7ffe637541f0]
+Percent:[%]
+Percent:[%]
+Len:[12]
+Len:[12]
+Unknown:[
+]FF300008 ,ff300
+]0f145736eff
+]%
+]21[:neL]
+Unknown:[%r]
+```
+
+## Test
+
+Test folder contain the main failes to test the functions.
+
+## Examples
+
 _printf functions examples:
 
 ```bash
-$ _printf("char: [%c]\n", 'H');
-  + Output: char: [H]
+_printf("char: [%c]\n", 'H');
+char: [H]
 ```
 
-- _printf("string: [%s]\n", "Hello people !");
-  + Output: string: [Hello people !]
+```bash
+printf("string: [%s]\n", "Hello people !");
+Output: string: [Hello people !]
+```
 
-- _printf("integer: [%i]\n", 26);
-  + Output: integer: [26]
+```bash
+_printf("integer: [%i]\n", 26);
+Output: integer: [26]
+```
 
-- _printf("decimal: [%d]\n", 10000);
-  + Output: decimal: [10000]
+```bash
+_printf("decimal: [%d]\n", 10000);
+Output: decimal: [10000]
+```
 
-- _printf("octal [%o]\n", 92);
-  + Output: octal [134]
+```bash
+_printf("octal [%o]\n", 92);
+Output: octal [134]
+```
 
-- _printf("Percent: [%%%%]\n");
-  + Output: Percent: [%%]
+```bash
+_printf("Percent: [%%%%]\n");
+Output: Percent: [%%]
+```
 
-- _printf("Reverse: [%r]\n", "Programming is great!");
-  + Output: Reverse: [!taerg si gnimmargorP]
+```bash
+_printf("Reverse: [%r]\n", "Programming is great!");
+Output: Reverse: [!taerg si gnimmargorP]
+```
 
 ### Manual ###
+
 To review the _printf function manual execute in your terminal:
 
+````bash
 $ man ./man_3_printf
+````
 
 # Flowchart
 
@@ -111,40 +182,39 @@ $ man ./man_3_printf
 </div>
 <br>
 
-
 ## About authors
-``Diego Guarise`` & ``Ronald Rivero`` & ``Joaquin Pintaluba``
 
+```Diego Guarise```
+```Ronald Rivero```
+```Joaquin Pintaluba```
 
-###### Diego
+```Diego```
 
+<div>
+<a href="https://www.linkedin.com/in/diego-guarise/" target="_blank"> <img align="left" alt="Diego Guarise | LinkedIn" src="https://img.shields.io/badge/LinkedIn-follow-blue?style=social&logo=linkedin"/> </a>
 
-<br>
-<a href="https://github.com/Diego-Guarise" target="_blank"> <img align="left" alt="Diego Guarise | Github" width="22px" src="https://raw.githubusercontent.com/ralexrivero/xelar_theme_profile/main/icons/github-icon.svg" /> </a>
-<a href="https://www.linkedin.com/in/diego-guarise/" target="_blank"> <img align="left" alt="Diego Guarise | LinkedIn" width="22px" src="https://raw.githubusercontent.com/ralexrivero/xelar_theme_profile/main/icons/linkedin-brands_blue.svg" /> </a>
-<a href="mailto:l.guariselopez@gmail.com?subject=Contact" target="_blank"><img align="left" width="22" src="https://raw.githubusercontent.com/ralexrivero/xelar_theme_profile/main/icons/envelope-regular_blue.svg" alt="email me"> </a>
-<br>
+<a href="https://github.com/Diego-Guarise/" target="_blank"> <img align="left" src="https://img.shields.io/github/followers/Diego-Guarise?style=social" alt="Diego-Guarise | Github"> </a>
+</br>
+</div>
 
+```Ronald```
 
-###### Ronald
+<div>
+<a href="https://twitter.com/ralex_uy" target="_blank"> <img align="left" alt="Ronald Rivero | Twitter" src="https://img.shields.io/twitter/follow/ralex_uy?style=social"/> </a>
 
+<a href="https://www.linkedin.com/in/ronald-rivero/" target="_blank">  <img align="left" alt="Ronald Rivero | LinkedIn" src="https://img.shields.io/badge/LinkedIn-+20K-blue?style=social&logo=linkedin"/> </a>
 
-<br>
-<a href="https://github.com/ralexrivero" target="_blank"> <img align="left" alt="Ronald Rivero | Github" width="22px" src="https://raw.githubusercontent.com/ralexrivero/xelar_theme_profile/main/icons/github-icon.svg" /> </a>
-<a href ="https://discord.gg/4QNsYMAa4t" target="_blank" rel="noreferrer noopener"> <img align="left" src="https://raw.githubusercontent.com/ralexrivero/xelar_theme_profile/main/icons/discord-brands_blue.svg" alt="Ronald Rivero | Discord" width="22px"> </a>
-<a href="https://twitter.com/ralex_uy" target="_blank"> <img align="left" alt="Ronald Rivero | Twitter" width="22px" src="https://raw.githubusercontent.com/ralexrivero/xelar_theme_profile/main/icons/twitter-square-brands_blue.svg" /> </a>
-<a href="https://www.linkedin.com/in/ronald-rivero/" target="_blank"> <img align="left" alt="Ronald Rivero | LinkedIn" width="22px" src="https://raw.githubusercontent.com/ralexrivero/xelar_theme_profile/main/icons/linkedin-brands_blue.svg" /> </a>
-<a href="mailto:ralexrivero@gmail.com?subject=Contact" target="_blank"><img align="left" width="22" src="https://raw.githubusercontent.com/ralexrivero/xelar_theme_profile/main/icons/envelope-regular_blue.svg" alt="email me"> </a>
-<br>
+<a href="https://github.com/ralexrivero/" target="_blank">  <img align="left" src="https://img.shields.io/github/followers/ralexrivero?style=social" alt="Ralex | Github"> </a>
+</br>
+</div>
 
+```Joaquin```
 
-###### Joaquin
+<div>
+<a href="https://twitter.com/tatinfa" target="_blank">  <img align="left" alt="Joaquin Pintaluba | Twitter" src="https://img.shields.io/twitter/follow/tatinfa?style=social"/> </a>
 
+<a href="https://www.linkedin.com/in/joaquin-pintaluba/" target="_blank"> <img align="left" alt="Joaquin Pintaluba | LinkedIn" src="https://img.shields.io/badge/LinkedIn-follow-blue?style=social&logo=linkedin"/> </a>
 
-<br>
-<a href="https://github.com/jopinta" target="_blank"> <img align="left" alt="Joaquin Pintaluba | Github" width="22px" src="https://raw.githubusercontent.com/ralexrivero/xelar_theme_profile/main/icons/github-icon.svg" /> </a>
-
-<a href="https://twitter.com/tatinfa" target="_blank"> <img align="left" alt="Joaquin Pintaluba | Twitter" width="22px" src="https://raw.githubusercontent.com/ralexrivero/xelar_theme_profile/main/icons/twitter-square-brands_blue.svg" /> </a>
-<a href="https://www.linkedin.com/in/joaquin-pintaluba/" target="_blank"> <img align="left" alt="Joaquin Pintaluba | LinkedIn" width="22px" src="https://raw.githubusercontent.com/ralexrivero/xelar_theme_profile/main/icons/linkedin-brands_blue.svg" /> </a>
-<a href="mailto:ralexrivero@gmail.com?subject=Contact" target="_blank"><img align="left" width="22" src="https://raw.githubusercontent.com/ralexrivero/xelar_theme_profile/main/icons/envelope-regular_blue.svg" alt="email me"> </a>
-<br>
+<a href="https://github.com/jopinta" target="_blank"> <img align="left" src="https://img.shields.io/github/followers/jopinta?style=social" alt="Jopinta | Github"> </a>
+</br>
+</div>
