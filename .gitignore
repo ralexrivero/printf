@@ -1,3 +1,6 @@
+# executable
+printf
+
 # Prerequisites
 *.d
 
