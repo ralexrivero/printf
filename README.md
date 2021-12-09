@@ -196,6 +196,7 @@ $ man ./man_3_printf
 <img align="left" alt="_printf flowchart" width="100%" src="https://raw.githubusercontent.com/ralexrivero/printf/main/printf.svg" />
 </div>
 <br>
+<br>
 
 ***
 
