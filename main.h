@@ -53,4 +53,7 @@ int p_pt(va_list p);
 int p_r(va_list p);
 int p_Rt(va_list __attribute__((unused)) p);
 
+/* auxiliar functions */
+int aux_S_hex(int n);
+
 #endif

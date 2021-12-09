@@ -1,4 +1,5 @@
 #include "main.h"
+int aux_hex(int n);
 /**
  * p_Su - conversion specifier S
  *
@@ -10,9 +11,8 @@
  */
 int p_Su(va_list p)
 {
-	int i = 0, count = 0, ascii_step = 0, ascii_temp = 0, j = 1;
+	int i = 0, count = 0;
 	char *ptrChr_str = va_arg(p, char*);
-	char ascii_hexa [2] = {'0', '0'};
 
 	if (ptrChr_str == NULL)
 		return (write(1, "(null)", 6));
@@ -23,27 +23,7 @@ int p_Su(va_list p)
 			count += _putchar(ptrChr_str[i]);
 		else
 		{
-			count += write(1, "\\x", 2);
-			ascii_step = ptrChr_str[i];
-			while (ascii_step != 0)
-			{
-				ascii_temp = ascii_step % 16;
-				j = 1;
-				if (ascii_temp >= 0 && ascii_temp < 10)
-				{
-					ascii_hexa[j] = '0' + ascii_temp;
-					j--;
-				}
-				else if (ascii_temp >= 10 && ascii_temp < 16)
-				{
-					ascii_hexa[j] = 'A' + (ascii_temp - 10);
-					j--;
-				}
-				ascii_step /= 16;
-
-			}
-				count += _putchar(ascii_hexa[0]);
-				count += _putchar(ascii_hexa[1]);
+			count += aux_S_hex(ptrChr_str[i]);
 		}
 		i++;
 	}
