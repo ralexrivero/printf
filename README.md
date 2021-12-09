@@ -189,7 +189,7 @@ $ man ./man_3_printf
 
 ````
 
-# Flowchart
+## Flowchart
 
 <br>
 <div>
@@ -197,13 +197,11 @@ $ man ./man_3_printf
 </div>
 <br>
 
+***
+
 ## About authors
 
-```Diego Guarise```
-```Ronald Rivero```
-```Joaquin Pintaluba```
-
-```Diego```
+> ```Diego```
 
 <div>
 <a href="https://www.linkedin.com/in/diego-guarise/" target="_blank"> <img align="left" alt="Diego Guarise | LinkedIn" src="https://img.shields.io/badge/LinkedIn-follow-blue?style=social&logo=linkedin"/> </a>
@@ -212,7 +210,7 @@ $ man ./man_3_printf
 </br>
 </div>
 
-```Ronald```
+> ```Ronald```
 
 <div>
 <a href="https://twitter.com/ralex_uy" target="_blank"> <img align="left" alt="Ronald Rivero | Twitter" src="https://img.shields.io/twitter/follow/ralex_uy?style=social"/> </a>
@@ -223,7 +221,7 @@ $ man ./man_3_printf
 </br>
 </div>
 
-```Joaquin```
+> ```Joaquin```
 
 <div>
 <a href="https://twitter.com/tatinfa" target="_blank">  <img align="left" alt="Joaquin Pintaluba | Twitter" src="https://img.shields.io/twitter/follow/tatinfa?style=social"/> </a>
