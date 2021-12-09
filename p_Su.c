@@ -23,8 +23,7 @@ int p_Su(va_list p)
 			count += _putchar(ptrChr_str[i]);
 		else
 		{
-			write(1, "\\x", 3);
-			count += 2;
+			count += write(1, "\\x", 2);
 			ascii_step = ptrChr_str[i];
 			while (ascii_step != 0)
 			{
